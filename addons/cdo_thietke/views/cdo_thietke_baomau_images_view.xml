@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+    		<record model="ir.ui.view" id="view_cdo_thietke_baomau_images_inherit_form">
+                <field name="name">cdo_thietke_baomau.images_inherit.form</field>
+                <field name="model">cdo_thietke.baomau</field>
+                <field name="type">form</field>
+                <field name="priority">1</field>
+                <field name="inherit_id" ref="view_cdo_thietke_baomau_form"/>
+                <field name="arch" type="xml">
+                	<notebook>
+                    	<page string="Hình ảnh khảo sát" name="images">
+		                    <xpath expr="//page[@name='Thông tin']" position="inside">
+			                	<field name="image_ids" nolabel="1" widget="one2many_list">
+			                       	<tree string="Pictures" editable="top">
+			                       		<field name="file_name" invisible="1"/>
+			                       		<field name="image" widget="image" filename="file_name" width="70px" class="cdo_img_400"/>
+			                       		<field name="description" style="width:69%"/>
+			                       	</tree>
+			                       	<form  string="Pictures">
+			                       		<field name="image" widget="image" with="150" class="cdo_img_400"/>
+			                       		<field name="description"/>
+			                       	</form>
+			                    </field>
+			                </xpath>
+	                	</page>
+	                </notebook>
+                </field>
+            </record>
+    
+    </data>
+</openerp>

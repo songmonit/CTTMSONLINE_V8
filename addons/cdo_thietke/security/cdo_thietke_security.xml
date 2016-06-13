@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+<data>
+	<!--  Tạo name Application  -->
+	<record model="ir.module.category" id="module_category_thietke">
+		<field name="name">Module Thiết kế</field>
+        <field name="sequence">200</field>
+    </record>	
+	<!-- Tạo name group  -->
+	<record model="res.groups" id="group_thietke">
+    	<field name="name">Truy cập Thiết kế</field>
+    	<field name="category_id" ref="module_category_thietke"/>
+    </record>
+	<record model="res.groups" id="group_thietke_tk">
+    	<field name="name">Thiết kế - Thiết Kế</field>
+    	<field name="category_id" ref="module_category_thietke"/>
+    </record>
+    <record model="res.groups" id="group_thietke_kd">
+    	<field name="name">Thiết kế - Kinh Doanh</field>
+    	<field name="category_id" ref="module_category_thietke"/>
+    </record>
+    <record model="res.groups" id="group_thietke_dp">
+    	<field name="name">Thiết kế - Điều Phối</field>
+    	<field name="category_id" ref="module_category_thietke"/>
+    </record>
+</data>
+</openerp>

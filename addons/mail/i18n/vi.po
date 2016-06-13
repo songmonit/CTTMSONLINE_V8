@@ -131,7 +131,7 @@ msgid "<p>\n"
 "                </p>\n"
 "            "
 msgstr "<p>\n"
-"                    <b>Không có todo.</b>\n"
+"                    <b>Không có việc cần làm (todo).</b>\n"
 "                </p><p>\n"
 "                    Khi bạn xử lý các thông điệp trong hộp thư đến, bạn có thể đánh dấu\n"
 "                    các tin thành <i>todo</i>. Từ menu todo, bạn có thể xử lý các công việc cần giải quyết (todo).\n"
@@ -2149,7 +2149,7 @@ msgstr "không thích"
 #: code:addons/mail/static/src/xml/mail.xml:286
 #, python-format
 msgid "updated document"
-msgstr "đã cập nhật tài liệu"
+msgstr "đã cập nhật"
 
 #. module: mail
 #. openerp-web

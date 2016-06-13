@@ -365,7 +365,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li><a href="#" data-menu="settings">Preferences</a></li>
-                <li><a href="#" data-menu="about">About Odoo</a></li>
+                <li><a href="#" data-menu="about">About</a></li>
                 <li><a href="#" data-menu="help">Help</a></li>
                 <li><a href="#" data-menu="logout">Log out</a></li>
             </ul>
@@ -382,7 +382,7 @@
             <div class="row">
                 <div class="col-sm-offset-2 col-md-offset-2 col-sm-8 col-md-8 user-details">
                     <div class="user-image">
-                        <img src="/web/static/src/img/logo2.png" alt="CTTMS" title="CTTMS" class="img-circle"/>
+                        <img src="/web/static/src/img/logo2.png" alt="CTTMS" title="CTTMS" class="img"/>
                     </div>
                     <div class="user-info-block">
                         <div class="user-heading">

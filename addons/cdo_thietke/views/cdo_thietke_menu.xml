@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+	    <!-- Action -->
+	    <record model="ir.actions.act_window" id="action_cdo_thietke_baomau_form">
+	        <field name="name">YC Báo mẫu</field>
+	        <field name="res_model">cdo_thietke.baomau</field>
+	        <field name="view_type">tree</field>
+	        <field name="view_mode">tree,form</field>
+	        <field name="view_id" ref="view_cdo_thietke_baomau_tree"/>
+	        <field name="help" type="html">
+	              <p class="oe_view_nocontent_create">
+	                Click để tạo báo mẫu.
+	              </p><p>
+	                Khi khách hàng có nhu cầu báo mẫu bạn hãy điền thông tin vào form yêu cầu báo mẫu, hệ thống sẽ gửi về cty để thiết kế và gửi mẫu cho bạn sớm nhất có thể.
+	              </p></field>
+	    </record>
+	    
+	    <record model="ir.actions.act_window" id="action_cdo_thietke_baomau_tree">
+	        <field name="name">Báo mẫu</field>
+	        <field name="res_model">cdo_thietke.baomau</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">tree,form</field>
+    	</record>
+	   
+		<!-- Top menu item -->
+        <menuitem 
+        	name="Thiết kế"
+            id="menu_cdo_thietke"
+            groups="cdo_thietke.group_thietke"
+            sequence="25"/>
+        	
+	  	<menuitem action="action_cdo_thietke_baomau_tree"
+	       	id="menu_cdo_thietke_baomau"
+	        name="Thiết kế"
+	        parent="menu_cdo_thietke"
+	        groups="cdo_thietke.group_thietke"
+	        sequence="3"/>
+
+	    <menuitem action="action_cdo_thietke_baomau_tree"
+	       	id="menu_cdo_thietke_baomau_list"
+	        name="Yêu cầu Thiết kế"
+	        parent="menu_cdo_thietke_baomau"
+	        groups="cdo_thietke.group_thietke"
+	        sequence="2"/>
+	    
+	    <menuitem action="action_cdo_thietke_baomau_tree"
+	       	id="menu_cdo_thietke_baomau_view_tree"
+	        name="Yêu cầu Thiết kế"
+	        parent="base.menu_sales"
+	        groups="cdo_thietke.group_thietke"
+	        sequence="4"/>
+    	
+	</data>
+</openerp>

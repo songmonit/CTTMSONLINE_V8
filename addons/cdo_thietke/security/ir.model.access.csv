@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+;access_cdo_thietke_baomau,cdo_thietke.baomau user,model_cdo_thietke_baomau,base.group_user,1,1,1,1
+;access_cdo_thietke_baomau_images,cdo_thietke_baomau.images user,model_cdo_thietke_baomau_images,base.group_user,1,1,1,1
+access_cdo_thietke_mautk_kd,Thiet ke KD,model_cdo_thietke_mautk,cdo_thietke.group_thietke_kd,1,0,0,0
+access_cdo_thietke_mautk,Thiet ke user,model_cdo_thietke_mautk,cdo_thietke.group_thietke,1,0,0,0
+access_cdo_thietke_mautk_dp,Thiet ke DP,model_cdo_thietke_mautk,cdo_thietke.group_thietke_dp,1,1,1,1
+access_cdo_thietke_mautk_tk,Thiet ke TK,model_cdo_thietke_mautk,cdo_thietke.group_thietke_tk,1,1,0,0
+;access_cdo_thietke_mautk_images,cdo_thietke.mautk_images user,model_cdo_thietke_mautk_images,base.group_user,1,1,1,1

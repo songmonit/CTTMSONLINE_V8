@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+    	<record model="workflow" id="workflow_cdo_mautk">
+            <field name="name">cdo_thietke.workflow</field>
+            <field name="osv">cdo_thietke.mautk</field>
+            <field name="on_create">True</field>
+        </record>
+        
+        <!-- Activity -->
+        <record model="workflow.activity" id="act_open">
+            <field name="wkf_id" ref="workflow_cdo_mautk" />
+            <field name="flow_start">True</field>
+            <field name="name">Open</field>
+            <field name="kind">function</field>
+            <field name="action">mautk_open()</field>
+        </record>
+        
+        <record model="workflow.activity" id="act_confirmed">
+            <field name="wkf_id" ref="workflow_cdo_mautk" />
+            <field name="name">Confirmed</field>
+            <field name="kind">function</field>
+            <field name="action">mautk_confirmed()</field>
+        </record>
+        
+        <record model="workflow.activity" id="act_deploy">
+            <field name="wkf_id" ref="workflow_cdo_mautk" />
+            <field name="name">Deploy</field>
+            <field name="kind">function</field>
+            <field name="action">mautk_deploy()</field>
+        </record>
+        
+        <record model="workflow.activity" id="act_cancel">
+            <field name="wkf_id" ref="workflow_cdo_mautk" />
+            <field name="name">Cancel</field>
+            <field name="kind">stopall</field>
+            <field name="action">mautk_cancel()</field>
+            <field name="flow_stop" eval='True' />
+        </record>
+        
+        <record model="workflow.activity" id="act_done">
+            <field name="wkf_id" ref="workflow_cdo_mautk" />
+            <field name="name">Done</field>
+            <field name="kind">stopall</field>
+            <field name="action">mautk_done()</field>
+            <field name="flow_stop" eval='True' />
+        </record>
+        
+        <!-- Transition -->
+        <record model="workflow.transition" id="trans_open_confirmed" >
+            <field name="act_from" ref="act_open"/>
+            <field name="act_to" ref="act_confirmed"/>
+            <field name="signal">open_confirm</field>
+        </record>
+        <record model="workflow.transition" id="trans_open_cancel" >
+            <field name="act_from" ref="act_open"/>
+            <field name="act_to" ref="act_cancel"/>
+            <field name="signal">open_cancel</field>
+        </record>
+        
+        <record model="workflow.transition" id="trans_confirmed_open" >
+            <field name="act_from" ref="act_confirmed"/>
+            <field name="act_to" ref="act_open"/>
+            <field name="signal">confirm_open</field>
+        </record>
+        <record model="workflow.transition" id="trans_confirmed_cancel" >
+            <field name="act_from" ref="act_confirmed"/>
+            <field name="act_to" ref="act_cancel"/>
+            <field name="signal">confirm_cancel</field>
+        </record>
+        <record model="workflow.transition" id="trans_confirmed_deploy" >
+            <field name="act_from" ref="act_confirmed"/>
+            <field name="act_to" ref="act_deploy"/>
+            <field name="signal">confirm_deploy</field>
+        </record>
+        
+        <record model="workflow.transition" id="trans_deploy_done" >
+            <field name="act_from" ref="act_deploy"/>
+            <field name="act_to" ref="act_done"/>
+            <field name="signal">deploy_done</field>
+        </record>
+        <record model="workflow.transition" id="trans_deploy_cancel" >
+            <field name="act_from" ref="act_deploy"/>
+            <field name="act_to" ref="act_cancel"/>
+            <field name="signal">deploy_cancel</field>
+        </record>
+        
+    </data>
+</openerp>
