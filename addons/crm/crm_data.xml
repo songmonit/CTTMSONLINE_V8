@@ -84,9 +84,8 @@
             <field name="res_id" ref="mail.group_all_employees"/>
             <field name="type">notification</field>
             <field name="subtype_id" ref="mail.mt_comment"/>
-            <field name="subject">CRM application installed!</field>
-            <field name="body"><![CDATA[<p>From the top Sales menu you can track leads and opportunities, get accurate forecast on your sales pipeline, plan meetings and phonecalls, get realtime statistics and efficiently organize the communication with your prospects.</p>
-<p>To manage quotations and sale orders, install the "Sales Management" application.</p>]]></field>
+            <field name="subject">Module Quản lý quan hệ KH (CRM) đã cài đặt!</field>
+            <field name="body"><![CDATA[<p>.</p>]]></field>
         </record>
 
     </data>

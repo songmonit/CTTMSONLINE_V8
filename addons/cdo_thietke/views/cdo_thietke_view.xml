@@ -11,7 +11,7 @@
         <field name="arch" type="xml">
             <form string="yêu cầu báo mẫu">
             	<header>
-                    <button string="Giao thiết kế" name="%(action_cdo_thietke_mautk_form)d" type="action"  attrs="{'invisible': [('state','==','close')]}" class="oe_highlight" groups="cdo_thietke.group_thietke_dp"/>
+                    <button string="Giao thiết kế" name="action_cdo_thietke_mautk_form" type="action"  attrs="{'invisible': [('state','==','close')]}" class="oe_highlight" groups="cdo_thietke.group_thietke_dp"/>
                     <button string="Đóng" name="baomau_close" type="object"   groups="cdo_thietke.group_thietke_dp"/>
                     <field name="state" widget="statusbar" statusbar_visible="new,price,show,close"/>
                 </header>

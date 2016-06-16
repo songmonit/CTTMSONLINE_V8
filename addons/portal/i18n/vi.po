@@ -166,8 +166,7 @@ msgstr "Gửi %(name)s,\n"
 "%(welcome_message)s\n"
 "\n"
 "--\n"
-"Odoo - Open Source Business Applications\n"
-"https://www.erponline.vn\n"
+"http://www.cttms.vn\n"
 ""
 
 #. module: portal
