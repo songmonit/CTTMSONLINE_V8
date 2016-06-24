@@ -288,7 +288,10 @@ msgid "<p class=\"oe_view_nocontent_create\">\n"
 "                to see all the past or future movements for the product.\n"
 "              </p>\n"
 "            "
-msgstr ""
+msgstr "<p class=\"oe_view_nocontent_create\">\n"
+"                Bấm để ghi nhận di chuyển.\n"
+"              </p>\n"
+"            "
 
 #. module: stock
 #: model:ir.actions.act_window,help:stock.action_picking_tree
@@ -300,7 +303,9 @@ msgid "<p class=\"oe_view_nocontent_create\">\n"
 "                manual stock movements.\n"
 "              </p>\n"
 "            "
-msgstr ""
+msgstr "<p class=\"oe_view_nocontent_create\">\n"
+"                Bấm để tạo mới hoạt động. \n"
+"              </p>\n"
 
 #. module: stock
 #: model:ir.actions.act_window,help:stock.action_warehouse_form
@@ -383,14 +388,14 @@ msgstr "<p class=\"oe_view_nocontent_create\">\n"
 msgid "<p>Packages are usually created by pack operations made on transfers and can contains several different products. You can then reuse a package to move its whole content somewhere else, or to pack it into another bigger package. A package can also be unpacked, allowing the disposal of its former content as single units again.\n"
 "                </p>\n"
 "            "
-msgstr ""
+msgstr "Đóng gói thường được tạo dựa trên các hoạt động dịch chuyển và có thể chứa nhiều sản phẩm khác nhau"
 
 #. module: stock
 #. openerp-web
 #: code:addons/stock/static/src/js/widgets.js:656
 #, python-format
 msgid "<p>We could not find a picking to display.</p>"
-msgstr "<p>Chúng ta không thể tìm thấy một lô hàng để hiển thị.</p>"
+msgstr "<p>Không tìm thấy một lô hàng để hiển thị.</p>"
 
 #. module: stock
 #: code:addons/stock/stock.py:2704
@@ -417,7 +422,7 @@ msgstr "Thêm một ghi chú nội bộ..."
 #. module: stock
 #: view:stock.config.settings:stock.view_stock_config_settings
 msgid "Additional Features"
-msgstr "Tính năng thêm"
+msgstr "Tính năng khác"
 
 #. module: stock
 #: view:stock.picking:stock.view_picking_form
@@ -439,7 +444,7 @@ msgstr "Địa chỉ"
 #: help:stock.config.settings,module_claim_from_delivery:0
 msgid "Adds a Claim link to the delivery order.\n"
 "-This installs the module claim_from_delivery."
-msgstr "Thêm một khiếu nại liên kết tới phiếu xuất kho.\n"
+msgstr "Thêm một khiếu nại liên quan tới phiếu xuất kho.\n"
 "-Việc này sẽ cài đặt phân hệ claim_from_delivery."
 
 #. module: stock
@@ -4059,7 +4064,7 @@ msgstr "Thời gian dự kiến cho phần cuối cùng của lô hàng được
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_stock_sched
 msgid "Schedulers"
-msgstr ""
+msgstr "Lịch biểu"
 
 #. module: stock
 #: view:stock.move:stock.view_move_form

@@ -79,13 +79,13 @@
       height: 90%;
       height: calc(100% - 52px); } }
   .openerp :-moz-placeholder {
-    color: #b5b4b5 !important;
+    color: #dacad0 !important;
     font-style: italic !important; }
   .openerp ::-webkit-input-placeholder {
-    color: #b5b4b5 !important;
+    color: #dacad0 !important;
     font-style: italic !important; }
   .openerp :-ms-input-placeholder {
-    color: #b5b4b5 !important;
+    color: #dacad0 !important;
     font-style: italic !important; }
   .openerp a {
     text-decoration: none;
@@ -263,32 +263,32 @@
     color: white;
     background: #DC5F59; }
   .openerp button.oe_highlight {
-    background-color: #4c9e6b;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#82ca9e), to(#157138));
-    background-image: -webkit-linear-gradient(top, #82ca9e, #157138);
-    background-image: -moz-linear-gradient(top, #82ca9e, #157138);
-    background-image: -ms-linear-gradient(top, #82ca9e, #157138);
-    background-image: -o-linear-gradient(top, #82ca9e, #157138);
-    background-image: linear-gradient(to bottom, #82ca9e, #157138);
+    background-color: #c12d2d;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#df3f3f), to(#a21a1a));
+    background-image: -webkit-linear-gradient(top, #df3f3f, #a21a1a);
+    background-image: -moz-linear-gradient(top, #df3f3f, #a21a1a);
+    background-image: -ms-linear-gradient(top, #df3f3f, #a21a1a);
+    background-image: -o-linear-gradient(top, #df3f3f, #a21a1a);
+    background-image: linear-gradient(to bottom, #df3f3f, #a21a1a);
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(155, 155, 155, 0.4) inset;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(155, 155, 155, 0.4) inset;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(155, 155, 155, 0.4) inset; }
   .openerp button.oe_highlight:hover {
-    background-color: #70b88b;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#c8f5d9), to(#177a3c));
-    background-image: -webkit-linear-gradient(top, #c8f5d9, #177a3c);
-    background-image: -moz-linear-gradient(top, #c8f5d9, #177a3c);
-    background-image: -ms-linear-gradient(top, #c8f5d9, #177a3c);
-    background-image: -o-linear-gradient(top, #c8f5d9, #177a3c);
-    background-image: linear-gradient(to bottom, #c8f5d9, #177a3c); }
+    background-color: #c73a3a;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e25858), to(#ab1b1b));
+    background-image: -webkit-linear-gradient(top, #e25858, #ab1b1b);
+    background-image: -moz-linear-gradient(top, #e25858, #ab1b1b);
+    background-image: -ms-linear-gradient(top, #e25858, #ab1b1b);
+    background-image: -o-linear-gradient(top, #e25858, #ab1b1b);
+    background-image: linear-gradient(to bottom, #e25858, #ab1b1b); }
   .openerp button.oe_highlight:active {
-    background-color: #40a969;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#1b9349), to(#65be88));
-    background-image: -webkit-linear-gradient(top, #1b9349, #65be88);
-    background-image: -moz-linear-gradient(top, #1b9349, #65be88);
-    background-image: -ms-linear-gradient(top, #1b9349, #65be88);
-    background-image: -o-linear-gradient(top, #1b9349, #65be88);
-    background-image: linear-gradient(to bottom, #1b9349, #65be88); }
+    background-color: #cc2222;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#c52020), to(#d22323));
+    background-image: -webkit-linear-gradient(top, #c52020, #d22323);
+    background-image: -moz-linear-gradient(top, #c52020, #d22323);
+    background-image: -ms-linear-gradient(top, #c52020, #d22323);
+    background-image: -o-linear-gradient(top, #c52020, #d22323);
+    background-image: linear-gradient(to bottom, #c52020, #d22323); }
   .openerp .oe_background_grey {
     background: #eee !important; }
   .openerp .oe_form_dirty .oe_highlight_on_dirty {
@@ -488,7 +488,7 @@
     height: 12px;
     width: 12px;
     vertical-align: top;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 1px 0; }
   .openerp .oe_form_field_radio.oe_form_required.oe_form_invalid .oe_radio_input {
     border-color: red; }
@@ -2509,7 +2509,7 @@ body.oe_single_form {
     margin-left: -200px; }
 
 .openerp_ie .placeholder {
-  color: #777 !important;
+  color: #dacad0 !important;
   font-style: italic !important; }
 .openerp_ie .oe_form_binary_file {
   width: 80px; }

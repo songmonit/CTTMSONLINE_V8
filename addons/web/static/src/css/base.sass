@@ -211,13 +211,13 @@ $sheet-padding: 16px
     // }}}
     //Placeholder style{{{
     \:-moz-placeholder
-        color: $tag-border !important
+        color: #b5b4b5 !important
         font-style: italic !important
     \::-webkit-input-placeholder
-        color: $tag-border !important
+        color: #b5b4b5 !important
         font-style: italic !important
     \:-ms-input-placeholder
-        color: $tag-border !important
+        color: #b5b4b5 !important
         font-style: italic !important
     //}}}
     // Tag reset {{{
@@ -365,12 +365,12 @@ $sheet-padding: 16px
         color: white
         background: #DC5F59
     button.oe_highlight
-        @include vertical-gradient(#df3f3f, #a21a1a)
+        @include vertical-gradient(#82ca9e, #157138)
         @include box-shadow((0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(155, 155, 155, 0.4) inset))
     button.oe_highlight:hover
-        @include vertical-gradient(lighten(#e04f4f, 2%), lighten(#a21a1a, 2%))
+        @include vertical-gradient(lighten(#bff3d3, 2%), lighten(#157138, 2%))
     button.oe_highlight:active
-        @include vertical-gradient(lighten(#a21a1a, 8%), darken(#df3f3f, 8%))
+        @include vertical-gradient(lighten(#157138, 8%), darken(#82ca9e, 8%))
     .oe_background_grey
         background: #eee !important
 
@@ -1124,7 +1124,7 @@ $sheet-padding: 16px
         min-width: 400px
         border: 1px solid #ababab
         background: white
-        @include radius(13px)
+        @include radius(5px)
         @include box-shadow(0 1px 2px rgba(0,0,0,0.2) inset)
         input, textarea
             padding: 3px
@@ -1216,7 +1216,7 @@ $sheet-padding: 16px
                     @include box-shadow(0 0 3px 1px $tag-border-selected)
                 .oe_facet_values
                     background: $tag-bg-light
-                    @include radius(0 3px 3px 0)
+                    @include radius(0 1px 1px 0)
                 .oe_facet_category, .oe_facet_value
                     padding: 0 4px
                 .oe_facet_category
@@ -2561,7 +2561,7 @@ body.oe_single_form
 // Internet Explorer 9+ specifics {{{
 .openerp_ie
     .placeholder
-        color: $tag-border !important
+        color: #777 !important
         font-style: italic !important
     .oe_form_binary_file
         width: 80px

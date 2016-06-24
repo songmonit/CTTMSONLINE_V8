@@ -194,7 +194,7 @@ msgid ""
 "                    documents, track all discussions, and much more.\n"
 "                </p>\n"
 "            "
-msgstr "<p class='oe_view_nocontent_create'>Click here to add new lead</p><p>\n                    Sử dụng nguồn dẫn nếu bạn cần một bước thẩm định trước khi tạo một\n                    cơ hội hoặc một khách hàng. Nó có thể là một business card mà bạn nhận được,\n                    một liên hệ từ website, hoặc một tệp tin chưa được thẩm định,...\n                </p><p>\n                    Khi đã được thẩm định, một nguồn dẫn có thể được chuyển thành một cơ hội kinh doanh\n                    và/hoặc một khách hàng mới trong sổ địa chỉ của bạn.\n                </p>\n            "
+msgstr "<p class='oe_view_nocontent_create'>Bấm để thêm mới 1 tiềm năng</p><p>\n                    Sử dụng nguồn dẫn nếu bạn cần một bước thẩm định trước khi tạo một\n                    cơ hội hoặc một khách hàng. Nó có thể là một business card mà bạn nhận được,\n                    một liên hệ từ website, hoặc một tệp tin chưa được thẩm định,...\n                </p><p>\n                    Khi đã được thẩm định, một nguồn dẫn có thể được chuyển thành một cơ hội kinh doanh\n                    và/hoặc một khách hàng mới trong sổ địa chỉ của bạn.\n                </p>\n            "
 
 #. module: crm
 #: model:ir.actions.act_window,help:crm.crm_case_form_view_salesteams_lead
@@ -234,7 +234,7 @@ msgid ""
 "                documents, track all discussions, and much more.\n"
 "            </p>\n"
 "        "
-msgstr "<p class='oe_view_nocontent_create'>Click here to add new opportunity</p><p>\n                    Hệ thống giúp bạn theo dõi chu trình bán hàng để theo dõi\n                    đơn hàng tiềm năng và dự báo doanh thu trong tương lai tốt hơn.\n                </p><p>\n                    Bạn có thể lập kế hoạch cho các cuộc gặp, cuộc họp và các cuộc gọi từ\n                    các cơ hội, chuyển chúng thành báo giá, đính kèm tài liệu liên quan,\n                    theo dõi tất cả các thảo luận,...\n                </p>\n            "
+msgstr "<p>\n                    Hệ thống giúp bạn theo dõi chu trình bán hàng để theo dõi\n                    đơn hàng tiềm năng và dự báo doanh thu trong tương lai tốt hơn.\n                </p><p>\n                    Bạn có thể lập kế hoạch cho các cuộc gặp, cuộc họp và các cuộc gọi từ\n                    các cơ hội, chuyển chúng thành báo giá, đính kèm tài liệu liên quan,\n                    theo dõi tất cả các thảo luận,...\n                </p>\n            "
 
 #. module: crm
 #: model:ir.actions.act_window,help:crm.crm_case_category_act_leads_all
@@ -249,7 +249,7 @@ msgid ""
 "                opportunity and/or a new customer in your address book.\n"
 "            </p>\n"
 "        "
-msgstr "<p>\n"
+msgstr "<p class='oe_view_nocontent_create'>Bấm để thêm mới 1 tiềm năng</p><p>\n "
 "                Sử dụng Tiềm năng nếu bạn cần có thêm một bước thẩm định thông tin trước\n"
 "                khi tạo mới một Cơ hội hay một Khách hàng. Một tiềm năng có thể chứa các thông,\n"
 "                tin mà bạn thu thập được hay là một danh thiếp của ai đó. Nó cũng có thể được tạo\n"
@@ -2625,7 +2625,7 @@ msgid ""
 "                            all these fields in common. (not one of the fields)."
 msgstr "Chọn danh mục các trường được sử dụng để tìm kiếm các bản ghi (đối tác) có giá trị\n"
 "                            trùng nhau ở những trường này. Nếu bạn chọn nhiều hơn một trường,\n"
-"                            Odoo sẽ đề xuất bạn chỉ trộn những bản ghi có tất cả các trường\n"
+"                            hệ thống sẽ đề xuất bạn chỉ trộn những bản ghi có tất cả các trường\n"
 "                            được chọn có giá trị giống nhau (thỏa mãn tất cả các trường chứ không phải thỏa mãn một trong số đó)."
 
 #. module: crm

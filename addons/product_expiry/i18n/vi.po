@@ -39,7 +39,7 @@ msgstr "Ngày kết thức vòng đời"
 #. module: product_expiry
 #: model:ir.model,name:product_expiry.model_stock_production_lot
 msgid "Lot/Serial"
-msgstr "Lô/Sê-ri"
+msgstr "Lô/Serial"
 
 #. module: product_expiry
 #: field:product.template,alert_time:0

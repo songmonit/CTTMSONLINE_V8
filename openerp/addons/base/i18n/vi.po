@@ -6626,11 +6626,11 @@ msgid "<p class=\"oe_view_nocontent_create\">\n"
 "              </p>\n"
 "            "
 msgstr "<p class=\"oe_view_nocontent_create\">\n"
-"                Click to add a contact in your address book.\n"
+"                Bấm để thêm liên hệ (đối tác) vào sổ địa chỉ.\n"
 "              </p><p>\n"
-"                Odoo helps you easily track all activities related to\n"
-"                a customer: discussions, history of business opportunities,\n"
-"                documents, etc.\n"
+"                Hệ thống sẽ giúp bạn quản lý các thông tin liên quan đến \n"
+"                khách hàng như: nội dung thảo luận, ghi lại các cơ hội bán hàng,\n"
+"                lịch sử giao dịch,...\n"
 "              </p>\n"
 "            "
 
@@ -6645,11 +6645,11 @@ msgid "<p class=\"oe_view_nocontent_create\">\n"
 "              </p>\n"
 "            "
 msgstr "<p class=\"oe_view_nocontent_create\">\n"
-"                Click to add a contact in your address book.\n"
+"                Bấm để thêm liên hệ (đối tác) vào sổ địa chỉ.\n"
 "              </p><p>\n"
-"                Odoo helps you easily track all activities related to\n"
-"                a customer; discussions, history of business opportunities,\n"
-"                documents, etc.\n"
+"                Hệ thống sẽ giúp bạn quản lý các thông tin liên quan đến \n"
+"                khách hàng như: nội dung thảo luận, ghi lại các cơ hội bán hàng,\n"
+"                lịch sử giao dịch,...\n"
 "              </p>\n"
 "            "
 
@@ -6664,11 +6664,11 @@ msgid "<p class=\"oe_view_nocontent_create\">\n"
 "              </p>\n"
 "            "
 msgstr "<p class=\"oe_view_nocontent_create\">\n"
-"                Click to add a contact in your address book.\n"
+"                Bấm để thêm liên hệ (đối tác) vào sổ địa chỉ.\n"
 "              </p><p>\n"
-"                Odoo helps you easily track all activities related to\n"
-"                a supplier: discussions, history of purchases,\n"
-"                documents, etc.\n"
+"                Hệ thống sẽ giúp bạn quản lý các thông tin liên quan đến \n"
+"                nhà cung cấp như: nội dung thảo luận, ghi lại các cơ hội bán hàng,\n"
+"                lịch sử giao dịch,...\n"
 "              </p>\n"
 "            "
 
@@ -6685,14 +6685,8 @@ msgid "<p class=\"oe_view_nocontent_create\">\n"
 "              </p>  \n"
 "            "
 msgstr "<p class=\"oe_view_nocontent_create\">\n"
-"                Click to create a bank account.\n"
-"              </p><p>\n"
-"                Configure your company's bank accounts and select those that must appear on the report footer.\n"
-"                You can reorder bank accounts from the list view.\n"
+"                Bấm để tạo tài khoản nhân hàng.\n"
 "              </p>\n"
-"              <p>\n"
-"                If you use the accounting application of Odoo, journals and accounts will be created automatically based on these data.\n"
-"              </p>  \n"
 "            "
 
 #. module: base
@@ -6721,16 +6715,13 @@ msgid "<p class=\"oe_view_nocontent_create\">\n"
 "            "
 msgstr "<p class=\"oe_view_nocontent_create\">\n"
 "                Nhấn để phân loại đối tác.\n"
-"              </p><p>\n"
-"                Manage the partner tags to better classify them for tracking and analysis purposes.\n"
-"                A partner may have several tags and tags have a hierarchical structure: a partner with a tag has also the parent tags.\n"
 "              </p>\n"
 "            "
 
 #. module: base
 #: model:ir.actions.act_window,help:base.action_ui_view_custom
 msgid "<p class=\"oe_view_nocontent_create\">Click here to create a customized view</p><p>Customized views are used when users reorganize the content of their dashboard views (via web client)</p>"
-msgstr "<p class=\"oe_view_nocontent_create\">Click here to create a customized view</p><p>Customized views are used when users reorganize the content of their dashboard views (via web client)</p>"
+msgstr "<p class=\"oe_view_nocontent_create\">Bấm để tạo một tùy chỉnh hiển thị</p><p></p>"
 
 #. module: base
 #: model:ir.actions.act_window,help:base.open_module_tree
@@ -6738,7 +6729,7 @@ msgid "<p><b>No module found!</b></p>\n"
 "              <p>You should try others search criteria.</p>\n"
 "            "
 msgstr "<p><b>Không có phân hệ được tìm thấy!</b></p>\n"
-"              <p>Bạn nên thử tìm kiếm với tiêu chí khác.</p>\n"
+"              <p>Bạn hãy thử tìm kiếm với tiêu chí khác.</p>\n"
 "            "
 
 #. module: base
@@ -6760,7 +6751,7 @@ msgstr "Một nhóm quyền là một bộ chức năng mà sẽ được gán c
 #. module: base
 #: model:ir.module.module,summary:base.module_hw_posbox_homepage
 msgid "A homepage for the PosBox"
-msgstr "Một trang chủ cho máy bán hàng (PosBox)"
+msgstr "Trang chủ cho máy bán hàng (PosBox)"
 
 #. module: base
 #: model:ir.module.module,description:base.module_test_exceptions
@@ -12755,12 +12746,12 @@ msgstr "Nạp ngôn ngữ"
 #: model:ir.actions.act_window,name:base.open_module_tree
 #: model:ir.ui.menu,name:base.menu_module_tree
 msgid "Local Modules"
-msgstr "Mô-đun cục bộ"
+msgstr "Modules"
 
 #. module: base
 #: field:res.lang,code:0
 msgid "Locale Code"
-msgstr "Mã địa phương hóa"
+msgstr "Mã vùng"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_localization
@@ -12788,7 +12779,7 @@ msgstr "Đăng nhập"
 #. module: base
 #: field:res.company,logo:0
 msgid "Logo"
-msgstr "Biểu tượng"
+msgstr "Logo"
 
 #. module: base
 #: field:res.company,logo_web:0
@@ -15923,7 +15914,7 @@ msgstr "Xem tất cả giá trị có thể"
 #: code:addons/common.py:50
 #, python-format
 msgid "See http://openerp.com"
-msgstr "Xem http://www.erponline.vn"
+msgstr "Xem http://www.cttms.vn"
 
 #. module: base
 #: help:multi_company.default,field_id:0
