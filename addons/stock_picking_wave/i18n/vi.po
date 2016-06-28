@@ -35,31 +35,29 @@ msgstr ""
 "              </p><p>\n"
 "                Mục đích của picking waves là để nhóm các hoạt động xuất/nhập kho mà có thể \n"
 "                (cần phải) được thực hiện cùng nhau để tăng hiệu quả.\n"
-"                It may also be useful to assign jobs (one person = one wave) or\n"
-"                help the timing management of operations (tasks to be done at 1pm).\n"
 "              </p>\n"
 "            "
 
 #. module: stock_picking_wave
 #: model:ir.model,name:stock_picking_wave.model_stock_picking_to_wave
 msgid "Add pickings to a picking wave"
-msgstr "Thêm Xuất/Nhập vào Đợt này"
+msgstr "Thêm Xuất/Nhập vào đợt này"
 
 #. module: stock_picking_wave
 #: view:stock.picking.to.wave:stock_picking_wave.picking_to_wave_form
 msgid "Add pickings to wave"
-msgstr "Thêm Xuất/Nhập vào Đợt này"
+msgstr "Thêm Xuất/Nhập vào đợt này"
 
 #. module: stock_picking_wave
 #: model:ir.actions.act_window,name:stock_picking_wave.action_picking_to_wave
 #: model:ir.actions.act_window,name:stock_picking_wave.picking_to_wave_act
 msgid "Add to Wave"
-msgstr "Thêm vào Đợt"
+msgstr "Thêm vào đợt"
 
 #. module: stock_picking_wave
 #: view:stock.picking.to.wave:stock_picking_wave.picking_to_wave_form
 msgid "Add to wave"
-msgstr "Thêm vào Đợt"
+msgstr "Thêm vào đợt"
 
 #. module: stock_picking_wave
 #: view:stock.picking.to.wave:stock_picking_wave.picking_to_wave_form
@@ -70,7 +68,7 @@ msgstr "Hủy bỏ"
 #. module: stock_picking_wave
 #: view:stock.picking.wave:stock_picking_wave.view_picking_wave_form
 msgid "Cancel picking"
-msgstr ""
+msgstr "Hủy Xuất/Nhập"
 
 #. module: stock_picking_wave
 #: selection:stock.picking.wave,state:0
@@ -85,7 +83,7 @@ msgstr "Xác nhận"
 #. module: stock_picking_wave
 #: view:stock.picking.wave:stock_picking_wave.view_picking_wave_form
 msgid "Confirm picking"
-msgstr ""
+msgstr "Xác nhận Xuất/Nhập"
 
 #. module: stock_picking_wave
 #: field:stock.picking.to.wave,create_uid:0
@@ -124,7 +122,7 @@ msgstr "Lỗi!"
 #. module: stock_picking_wave
 #: view:stock.picking.wave:stock_picking_wave.view_picking_wave_form
 msgid "Force availability"
-msgstr "Cưỡng bức khả dụng"
+msgstr "Chỉ định khả dụng"
 
 #. module: stock_picking_wave
 #: view:stock.picking.wave:stock_picking_wave.view_picking_wave_filter
@@ -177,12 +175,12 @@ msgstr "Cập nhật lần cuối"
 #. module: stock_picking_wave
 #: help:stock.picking.wave,picking_ids:0
 msgid "List of picking associated to this wave"
-msgstr ""
+msgstr "Danh sách SP trong đợt xuất/nhập này"
 
 #. module: stock_picking_wave
 #: help:stock.picking.wave,name:0
 msgid "Name of the picking wave"
-msgstr ""
+msgstr "Tên đợt Xuất/Nhập"
 
 #. module: stock_picking_wave
 #: code:addons/stock_picking_wave/stock_picking_wave.py:40
@@ -193,7 +191,7 @@ msgstr "Không có gì để in."
 #. module: stock_picking_wave
 #: help:stock.picking.wave,user_id:0
 msgid "Person responsible for this wave"
-msgstr "Cá nhận chịu trách nhiệm cho đợt xuất/nhập này."
+msgstr "Người chịu trách nhiệm cho đợt xuất/nhập này."
 
 #. module: stock_picking_wave
 #: model:ir.model,name:stock_picking_wave.model_stock_picking
@@ -210,7 +208,7 @@ msgstr "Xuất/Nhật theo Đợt"
 #. module: stock_picking_wave
 #: field:stock.picking.wave,name:0
 msgid "Picking Wave Name"
-msgstr ""
+msgstr "Tên Xuất/Nhập theo đợt"
 
 #. module: stock_picking_wave
 #: model:ir.actions.act_window,name:stock_picking_wave.action_picking_wave
@@ -252,12 +250,12 @@ msgstr "Đang chạy"
 #. module: stock_picking_wave
 #: view:stock.picking.wave:stock_picking_wave.view_picking_wave_filter
 msgid "Search Picking Waves"
-msgstr ""
+msgstr "Tìm đợt giao nhận"
 
 #. module: stock_picking_wave
 #: view:stock.picking.to.wave:stock_picking_wave.picking_to_wave_form
 msgid "Select a wave"
-msgstr ""
+msgstr "Chọn một đợt"
 
 #. module: stock_picking_wave
 #: code:addons/stock_picking_wave/stock_picking_wave.py:57
@@ -266,6 +264,8 @@ msgid ""
 "Some pickings are still waiting for goods. Please check or force their "
 "availability before setting this wave to done."
 msgstr ""
+"Một vài giao nhận vẫn đang chờ. Hãy kiểm tra lại trước "
+"khi thiết lập sang trạng thái hoàn thành."
 
 #. module: stock_picking_wave
 #: model:product.template,name:stock_picking_wave.product_product_dry_specu_product_template
@@ -281,13 +281,13 @@ msgstr ""
 #: view:stock.picking.wave:stock_picking_wave.view_picking_wave_filter
 #: field:stock.picking.wave,state:0
 msgid "State"
-msgstr "Tỉnh/TPTƯ"
+msgstr "Tỉnh/TP"
 
 #. module: stock_picking_wave
 #: view:stock.picking.wave:stock_picking_wave.view_picking_wave_form
 #: view:stock.picking.wave:stock_picking_wave.view_picking_wave_tree
 msgid "Stock Picking Waves"
-msgstr ""
+msgstr "Đợt Xuất/Nhập"
 
 #. module: stock_picking_wave
 #: view:stock.picking.wave:stock_picking_wave.view_picking_wave_filter
@@ -303,7 +303,7 @@ msgstr "Cảnh báo"
 #. module: stock_picking_wave
 #: view:stock.picking:stock_picking_wave.view_stock_picking_wave_search_inherit
 msgid "Wave"
-msgstr ""
+msgstr "Đợt"
 
 #. module: stock_picking_wave
 #: view:stock.picking.to.wave:stock_picking_wave.picking_to_wave_form

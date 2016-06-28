@@ -1131,7 +1131,7 @@ msgstr "Messages"
 #. module: mail
 #: view:mail.message:mail.view_message_search
 msgid "Messages Search"
-msgstr "Messages Search"
+msgstr "Tìm tin nhắn"
 
 #. module: mail
 #: help:mail.group,message_ids:0
@@ -1144,7 +1144,7 @@ msgstr "Messages and communication history"
 #: model:ir.ui.menu,name:mail.mail_feeds
 #: model:ir.ui.menu,name:mail.mail_feeds_main
 msgid "Messaging"
-msgstr "Messaging"
+msgstr "Tin nhắn"
 
 #. module: mail
 #: view:res.users:mail.view_users_form_mail
@@ -1286,24 +1286,24 @@ msgstr "Open Document"
 #. module: mail
 #: model:ir.actions.client,name:mail.action_client_messaging_menu
 msgid "Open Messaging Menu"
-msgstr "Open Messaging Menu"
+msgstr "Mở menu tin nhắn"
 
 #. module: mail
 #: view:mail.alias:mail.view_mail_alias_form
 msgid "Open Parent Document"
-msgstr ""
+msgstr "Mở tài liệu liên đới"
 
 #. module: mail
 #. openerp-web
 #: code:addons/mail/static/src/xml/mail.xml:29
 #, python-format
 msgid "Open the full mail composer"
-msgstr "Open the full mail composer"
+msgstr "Mở trình soạn mail đầy đủ"
 
 #. module: mail
 #: help:mail.alias,alias_force_thread_id:0
 msgid "Optional ID of a thread (record) to which all incoming messages will be attached, even if they did not reply to it. If set, this will disable the creation of new records completely."
-msgstr ""
+msgstr "ID tùy chọn của một bản ghi mà tất cả các tin nhắn gửi đến sẽ được đính kèm, ngay cả khi họ không trả lời nó. Nếu được thiết lập, nó sẽ vô hiệu hóa việc tạo ra các hồ sơ mới hoàn toàn."
 
 #. module: mail
 #: model:ir.ui.menu,name:mail.mail_my_stuff
@@ -1399,7 +1399,7 @@ msgstr "Ảnh chụp"
 #: code:addons/mail/static/src/js/mail.js:623
 #, python-format
 msgid "Please complete partner's informations"
-msgstr "Vui lòng hoàn thành thông tin đối tác"
+msgstr "Vui lòng hoàn thành thông tin còn thiếu của đối tác"
 
 #. module: mail
 #. openerp-web

@@ -408,7 +408,8 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                Click để tạo hóa đơn mới.\n"
 "              </p>\n"
-"            "
+" "
+
 #. module: account
 #: model:ir.actions.act_window,help:account.action_invoice_tree3
 msgid ""
@@ -427,6 +428,7 @@ msgstr ""
 "                Click để hoàn tiền cho khách hàng.\n"
 "              </p>\n"
 "            "
+
 #. module: account
 #: model:ir.actions.act_window,help:account.action_move_journal_line
 msgid ""

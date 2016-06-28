@@ -70,7 +70,7 @@ msgid ""
 "            "
 msgstr ""
 "<p>\n"
-"                    Phát sinh trong Odoo cho phép bạn quản lý mọi thứ một "
+"                    Cho phép bạn quản lý các phát sinh trong dự án một "
 "cách hiệu quả\n"
 "                    như là yêu cầu nội bộ, sản xuất lỗi, khiếu nại của khách "
 "hàng,...\n"
@@ -89,7 +89,7 @@ msgid ""
 "        "
 msgstr ""
 "<p>\n"
-"                    Phát sinh trong Odoo cho phép bạn quản lý mọi thứ một "
+"                    Cho phép bạn quản lý các phát sinh trong dự án một "
 "cách hiệu quả\n"
 "                    như là yêu cầu nội bộ, sản xuất lỗi, khiếu nại của khách "
 "hàng,...\n"
@@ -287,7 +287,7 @@ msgstr "Ngày tháng"
 #. module: project_issue
 #: field:project.issue.report,date_closed:0
 msgid "Date of Closing"
-msgstr "Date of Closing"
+msgstr "Ngày đóng"
 
 #. module: project_issue
 #: field:project.issue.report,opening_date:0
@@ -377,7 +377,7 @@ msgstr "Thông tin thêm"
 #. module: project_issue
 #: view:project.issue:project_issue.project_feature_tree_view
 msgid "Feature Tracker Tree"
-msgstr ""
+msgstr "Theo dõi tính năng dạng cây"
 
 #. module: project_issue
 #: view:project.issue:project_issue.project_feature_tree_view
@@ -431,7 +431,7 @@ msgstr "Nếu đánh dấu kiểm, các thông điệp mới yêu cầu sự có
 #. module: project_issue
 #: field:project.issue,message_is_follower:0
 msgid "Is a Follower"
-msgstr "Là một người dõi theo"
+msgstr "Là người dõi theo"
 
 #. module: project_issue
 #: view:project.issue:project_issue.project_issue_form_view
@@ -472,12 +472,12 @@ msgstr "Giai đoạn phát sinh được thay đổi"
 #. module: project_issue
 #: view:project.issue:project_issue.view_project_issue_filter
 msgid "Issue Tracker Search"
-msgstr ""
+msgstr "Tìm theo dõi phát sinh"
 
 #. module: project_issue
 #: view:project.issue:project_issue.project_issue_tree_view
 msgid "Issue Tracker Tree"
-msgstr ""
+msgstr "Theo dõi phát sinh dạng cây"
 
 #. module: project_issue
 #: view:project.issue.version:project_issue.project_issue_version_form_view
@@ -534,7 +534,7 @@ msgstr "Hành động cuối cùng"
 #. module: project_issue
 #: view:project.issue:project_issue.view_project_issue_filter
 msgid "Last Message"
-msgstr ""
+msgstr "Thông điệp sau cùng"
 
 #. module: project_issue
 #: field:project.issue,message_last_post:0
@@ -731,7 +731,7 @@ msgstr "Giai đoạn được thay đổi"
 #: model:mail.message.subtype,description:project_issue.mt_issue_stage
 #: model:mail.message.subtype,description:project_issue.mt_project_issue_stage
 msgid "Stage changed"
-msgstr "Giai đoạn được thay đổi"
+msgstr "Giai đoạn đã thay đổi"
 
 #. module: project_issue
 #: view:project.issue:project_issue.project_issue_form_view

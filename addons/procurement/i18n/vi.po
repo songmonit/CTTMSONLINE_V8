@@ -44,7 +44,7 @@ msgstr "<p class=\"oe_view_nocontent_create\">\n"
 "                <br/>Phụ thuộc vào các thông số thiết lập đối với từng sản phẩm, cỗ máy cung ứng sẽ tìm cách để thỏa mãn bằng cách dành riêng/xí phần các sản phẩm từ kho, đặt mua từ một nhà cung cấp, hoặc tự tạo một lệnh sản xuất, v.v...\n"
 "              </p>\n"
 "              <p>\n"
-"                A <b>Ngoại lệ cung ứng</b> xảy ra khi hệ thống không thể tìm ra được một cách để đáp ứng nhu cầu cung ứng. Một số ngoại lệ sẽ tự động được xử lý, trong khi một số khác sẽ cần phải có sự can thiệp thủ công (those are identified by a specific error message in the chatter).\n"
+"                <b>Ngoại lệ cung ứng</b> xảy ra khi hệ thống không thể tìm ra được một cách để đáp ứng nhu cầu cung ứng. Một số ngoại lệ sẽ tự động được xử lý, trong khi một số khác sẽ cần phải có sự can thiệp thủ công.\n"
 "              </p>\n"
 "            "
 

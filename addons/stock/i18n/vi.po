@@ -263,7 +263,9 @@ msgid "<p class=\"oe_view_nocontent_create\">\n"
 "                you select a lot, you can get the traceability of the products contained in lot.\n"
 "              </p>\n"
 "            "
-msgstr ""
+msgstr "<p class=\"oe_view_nocontent_create\">\n"
+"                Bấm để tạo số serial.\n"
+"              </p>\n"
 
 #. module: stock
 #: model:ir.actions.act_window,help:stock.action_picking_type_form
@@ -276,7 +278,9 @@ msgid "<p class=\"oe_view_nocontent_create\">\n"
 "                if it should show the customer.  \n"
 "              </p>\n"
 "            "
-msgstr ""
+msgstr <p class=\"oe_view_nocontent_create\">\n"
+"                Click to create a new picking type. \n"
+"              </p>\n"
 
 #. module: stock
 #: model:ir.actions.act_window,help:stock.action_move_form2
@@ -1425,7 +1429,7 @@ msgstr "Ngày mong đợi"
 #. module: stock
 #: field:stock.config.settings,module_product_expiry:0
 msgid "Expiry date on serial numbers"
-msgstr "Ngày hết hạn trên số sê-ri"
+msgstr "Ngày hết hạn trên số serial"
 
 #. module: stock
 #: code:addons/stock/stock.py:1372
@@ -1470,27 +1474,27 @@ msgstr "Người dõi theo"
 #: view:stock.move:stock.view_move_picking_form
 #: view:stock.picking:stock.view_picking_form
 msgid "Force Availability"
-msgstr "Cưỡng bức sẵn có"
+msgstr "Chỉ định sẵn có"
 
 #. module: stock
 #: field:product.category,removal_strategy_id:0
 msgid "Force Removal Strategy"
-msgstr "Cưỡng bức Chiến lược Removal"
+msgstr "Chỉ định Chiến lược Removal"
 
 #. module: stock
 #: help:product.template,track_incoming:0
 msgid "Forces to specify a Serial Number for all moves containing this product and coming from a Supplier Location"
-msgstr "Cưỡng bức để chỉ ra một số sê-ri cho tất cả dịch chuyển kho đến từ một địa điểm nhà cung cấp"
+msgstr "Chỉ định một số serial cho tất cả dịch chuyển kho đến từ một địa điểm nhà cung cấp"
 
 #. module: stock
 #: help:product.template,track_outgoing:0
 msgid "Forces to specify a Serial Number for all moves containing this product and going to a Customer Location"
-msgstr "Cưỡng bức để chỉ ra một số sê-ri cho tất cả dịch chuyển kho đi đến một địa điểm khách hàng"
+msgstr "Chỉ định một số serial cho tất cả dịch chuyển kho đi đến một địa điểm khách hàng"
 
 #. module: stock
 #: help:product.template,track_all:0
 msgid "Forces to specify a Serial Number on each and every operation related to this product"
-msgstr "Cưỡng bức để chỉ ra một số sê-ri trên mỗi hoạt động hoặc tất cả hoạt động liên quan tới sản phẩm này"
+msgstr "Chỉ định một số serial trên mỗi hoạt động hoặc tất cả hoạt động liên quan tới sản phẩm này"
 
 #. module: stock
 #: view:product.template:stock.product_template_search_form_view_stock
@@ -1894,7 +1898,7 @@ msgstr "Địa điểm"
 #. module: stock
 #: field:stock.inventory,lot_id:0
 msgid "Inventoried Lot/Serial Number"
-msgstr "Số sê-ri/Lô hàng đã kiểm kho"
+msgstr "Số serial/Lô hàng đã kiểm kho"
 
 #. module: stock
 #: field:stock.inventory,partner_id:0
@@ -4147,18 +4151,18 @@ msgstr "Trình tự"
 #: field:stock.production.lot,name:0
 #: field:stock.return.picking.line,lot_id:0
 msgid "Serial Number"
-msgstr "Số sê-ri"
+msgstr "Số serial"
 
 #. module: stock
 #: field:stock.inventory.line,prodlot_name:0
 msgid "Serial Number Name"
-msgstr "Tên số sê-ri"
+msgstr "Tên số serial"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_production_lot_form
 #: model:ir.ui.menu,name:stock.menu_action_production_lot_form
 msgid "Serial Numbers"
-msgstr "Số sê-ri"
+msgstr "Số serial"
 
 #. module: stock
 #: field:procurement.rule,warehouse_id:0
@@ -4547,7 +4551,7 @@ msgstr "Mã nhà kho phải là duy nhất đối với mỗi công ty!"
 #. module: stock
 #: sql_constraint:stock.production.lot:0
 msgid "The combination of serial number, internal reference and product must be unique !"
-msgstr "Việc kết hợp số sê-ri, tham chiếu nội bộ và sản phẩm phải là duy nhất  !"
+msgstr "Việc kết hợp số serial, tham chiếu nội bộ và sản phẩm phải là duy nhất  !"
 
 #. module: stock
 #: help:stock.quant,company_id:0
@@ -4860,7 +4864,7 @@ msgstr "Track different dates on products and serial numbers.\n"
 #. module: stock
 #: field:stock.config.settings,group_stock_production_lot:0
 msgid "Track lots or serial numbers"
-msgstr "Theo dõi lô hàng và số sê-ri"
+msgstr "Theo dõi lô hàng và số serial"
 
 #. module: stock
 #: view:stock.picking:stock.view_picking_form
@@ -4922,7 +4926,7 @@ msgstr "Không bao giờ được tự xoá hay thay đổi quant một cách th
 #. module: stock
 #: help:stock.production.lot,name:0
 msgid "Unique Serial Number"
-msgstr "Số sê-ri duy nhất"
+msgstr "Số serial duy nhất"
 
 #. module: stock
 #: field:stock.quant,cost:0
@@ -5363,7 +5367,7 @@ msgstr "Bạn chỉ có thể trả/nhận lại hàng với điều kiện phi�
 #: code:addons/stock/stock.py:2287
 #, python-format
 msgid "You must assign a serial number for the product %s"
-msgstr "Bạn phải gắn một số sê-ri cho sản phẩm %s"
+msgstr "Bạn phải gắn một số serial cho sản phẩm %s"
 
 #. module: stock
 #: constraint:stock.move:0

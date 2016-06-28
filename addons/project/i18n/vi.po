@@ -57,12 +57,12 @@ msgstr "<p class=\"oe_view_nocontent_create\">\n"
 "                  Bấm để tạo mới một dự án.\n"
 "                </p><p>\n"
 "                  Dự án được sử dụng để tổ chức các hoạt động; lập kế hoạch\n"
-"                  nhiệm vụ, theo dõi phát sinh, xuất hóa đơn dựa trên chấm công.\n"
-"                  Bạn có thể định nghĩa dự án nội bộ(Nghiên cứu & Phát triển, Tăng kỹ năng bán hàng),\n"
-"                  dự án riêng tư (Công việc hàng ngày) hoặc các dự án của khách hàng.\n"
+"                  nhiệm vụ, theo dõi phát sinh.\n"
+"                  Bạn có thể định nghĩa dự án nội bộ(Nghiên cứu & Phát triển),\n"
+"                  dự án cá nhân (Công việc hàng ngày) hoặc các dự án của khách hàng.\n"
 "                </p><p>\n"
 "                  Bạn cũng có thể làm việc cộng tác với các thành viên của dự án\n"
-"                  hoặc mới khách hàng cùng tham gia dự án.\n"
+"                  hoặc mời khách hàng cùng tham gia dự án.\n"
 "                </p>\n"
 "            "
 
@@ -73,7 +73,7 @@ msgid "<p class=\"oe_view_nocontent_create\">\n"
 "              </p>\n"
 "            "
 msgstr "<p class=\"oe_view_nocontent_create\">\n"
-"                Bẫm để tạo một tag mới.\n"
+"                Bấm để tạo tag mới.\n"
 "              </p>\n"
 "            "
 
@@ -108,9 +108,9 @@ msgid "<p>\n"
 "                </p>\n"
 "            "
 msgstr "<p>\n"
-"                    Phân hệ quản lý dự án của Odoo cho phép bạn quản lý các kênh nhiệm vụ\n"
-"                    để khiến cho mọi thứ được hoàn thành một cách hiệu quả. Bạn có\n"
-"                    theo dõi các tiến trình, thảo luận trên các nhiệm vụ, đính kèm các tài liệu, vân vân.\n"
+"                    Hệ thống cho phép bạn quản lý các kênh nhiệm vụ để khiến công việc \n"
+"                    được hoàn thành một cách hiệu quả. Bạn có thể theo dõi các tiến trình, \n"
+"                    thảo luận trên các nhiệm vụ, đính kèm các tài liệu, ...\n"
 "                </p>\n"
 "            "
 
@@ -158,7 +158,7 @@ msgstr "Bí danh"
 #. module: project
 #: field:project.project,alias_model:0
 msgid "Alias Model"
-msgstr "Alias Model"
+msgstr "Bí danh Model"
 
 #. module: project
 #: field:project.config.settings,group_manage_delegation_task:0
@@ -219,7 +219,7 @@ msgstr "Tháng Phân công"
 #. module: project
 #: model:ir.actions.act_window,name:project.act_res_users_2_project_task_opened
 msgid "Assigned Tasks"
-msgstr "Nhiệm vụ đã được Phân công"
+msgstr "Nhiệm vụ đã Phân công"
 
 #. module: project
 #: field:report.project.task.user,user_id:0
@@ -271,13 +271,13 @@ msgstr "Bởi Người xem xét"
 #: code:addons/project/wizard/project_task_delegate.py:78
 #, python-format
 msgid "CHECK: "
-msgstr "CHECK: "
+msgstr "KIỂM TRA: "
 
 #. module: project
 #: code:addons/project/wizard/project_task_delegate.py:81
 #, python-format
 msgid "CHECK: %s"
-msgstr "CHECK: %s"
+msgstr "KIỂM TRA: %s"
 
 #. module: project
 #: view:project.config.settings:project.view_config_settings
@@ -299,7 +299,7 @@ msgstr "Đã hủy"
 #. module: project
 #: model:ir.model,name:project.model_project_category
 msgid "Category of project's task, issue, ..."
-msgstr "Category of project's task, issue, ..."
+msgstr "Danh mục của nhiệm vụ, Sự cố/vấn đề, ..."
 
 #. module: project
 #: code:addons/project/project.py:933
@@ -323,12 +323,12 @@ msgstr "Đã đóng"
 #: field:project.project,color:0
 #: field:project.task,color:0
 msgid "Color Index"
-msgstr "Chỉ số Màu sắc"
+msgstr "Gán (Index) Màu sắc"
 
 #. module: project
 #: view:project.task.type:project.task_type_search
 msgid "Common"
-msgstr "Common"
+msgstr "Kết hợp"
 
 #. module: project
 #: model:ir.model,name:project.model_res_company
@@ -433,7 +433,7 @@ msgstr "Ngày"
 #: help:project.project,message_last_post:0
 #: help:project.task,message_last_post:0
 msgid "Date of the last message posted on the record."
-msgstr "Ngày mà thông điệp cuối cùng được post vào bản ghi."
+msgstr "Ngày mà thông điệp cuối cùng được nhập."
 
 #. module: project
 #: field:report.project.task.user,opening_days:0
@@ -695,15 +695,10 @@ msgid "Holds visibility of the tasks or issues that belong to the current projec
 "- Followers Only: employees see only the followed tasks or issues; if portal\n"
 "   is activated, portal users see the followed tasks or issues."
 msgstr "Holds visibility of the tasks or issues that belong to the current project:\n"
-"- Public: everybody sees everything; if portal is activated, portal users\n"
-"   see all tasks or issues; if anonymous portal is activated, visitors\n"
-"   see all tasks or issues\n"
-"- Portal (only available if Portal is installed): employees see everything;\n"
-"   if portal is activated, portal users see the tasks or issues followed by\n"
-"   them or by someone of their company\n"
-"- Employees Only: toàn bộ nhân viên sẽ thấy các nhiệm vụ và phát sinh\n"
-"- Followers Only: nhân viên chỉ nhìn thấy nhiệm vụ/phát sinh mà họ theo dõi; nếu kích hoạt portal,\n"
-"   người dùng portal cũng chỉ thấy những nhiệm vụ / phát sinh mà họ theo dõi."
+"- Public - Công khai: Mọi người đều có thể thấy\n"
+"- Portal: Mọi nhân viên và người được cấp tài khoản portal có thể thấy\n"
+"- Employees Only - Nhân viên: toàn bộ nhân viên sẽ thấy các nhiệm vụ và phát sinh\n"
+"- Followers Only - NV theo DÁn: nhân viên chỉ nhìn thấy nhiệm vụ/phát sinh mà họ theo dõi."
 
 #. module: project
 #: field:project.task,effective_hours:0
@@ -733,7 +728,7 @@ msgstr "ID"
 #: help:project.project,message_unread:0
 #: help:project.task,message_unread:0
 msgid "If checked new messages require your attention."
-msgstr "If checked new messages require your attention."
+msgstr "Nếu được đánh dấu, thông điệp mới yc bạn chú ý."
 
 #. module: project
 #: help:account.analytic.account,use_tasks:0
@@ -792,7 +787,7 @@ msgstr "Hành động không hợp lệ"
 #. module: project
 #: field:project.config.settings,module_project_issue_sheet:0
 msgid "Invoice working time on issues"
-msgstr "Xuất hóa đơn theo thời gian làm việc trên Phát sinh"
+msgstr "Xuất hóa đơn theo thời gian làm việc dựa trên Phát sinh"
 
 #. module: project
 #: field:project.project,message_is_follower:0
@@ -859,8 +854,8 @@ msgstr "Cập nhật lần cuối"
 #: help:project.config.settings,module_pad:0
 msgid "Lets the company customize which Pad installation should be used to link to new pads (for example: http://ietherpad.com/).\n"
 "-This installs the module pad."
-msgstr "Lets the company customize which Pad installation should be used to link to new pads (for example: http://ietherpad.com/).\n"
-"-This installs the module pad."
+msgstr "\n"
+"-Cần cài đặt module pad."
 
 #. module: project
 #: help:project.project,analytic_account_id:0
@@ -909,7 +904,7 @@ msgstr "Thông điệp"
 #: help:project.project,message_ids:0
 #: help:project.task,message_ids:0
 msgid "Messages and communication history"
-msgstr "Lịch sử Thông điệp và Thông tin liên lạc"
+msgstr "Lịch sử thảo luận và Thông tin liên lạc"
 
 #. module: project
 #: view:project.project:project.edit_project
@@ -1028,7 +1023,7 @@ msgstr "Thông tin khác"
 #. module: project
 #: field:report.project.task.user,delay_endings_days:0
 msgid "Overpassed Deadline"
-msgstr "Vượt quá hạn chót"
+msgstr "Vượt hạn chót"
 
 #. module: project
 #: model:ir.actions.act_window,name:project.action_view_task_overpassed_draft
@@ -1064,7 +1059,7 @@ msgstr "Đang treo"
 #. module: project
 #: help:project.project,progress_rate:0
 msgid "Percent of tasks closed according to the total of tasks todo."
-msgstr "Phần trăm các nhiệm vụ đã đóng trên tổng số các nhiệm vụ cần thực hiện"
+msgstr "Phần trăm (%) các nhiệm vụ đã đóng trên tổng số các nhiệm vụ cần thực hiện"
 
 #. module: project
 #: field:project.task.delegate,planned_hours:0
