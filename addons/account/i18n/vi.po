@@ -493,6 +493,7 @@ msgstr ""
 "                Bấm để tạo mới.\n"
 "              </p>\n"
 "            "
+
 #. module: account
 #: model:ir.actions.act_window,help:account.action_account_type_form
 msgid ""
@@ -510,6 +511,7 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                Bấm để tạo thêm loại tài khoản.\n"
 "              </p>\n"
+
 #. module: account
 #: model:ir.actions.act_window,help:account.action_subscription_form
 msgid ""
@@ -545,6 +547,7 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                Bấm để định nghĩa mã thuế mới.\n"
 "              </p>\n"
+
 #. module: account
 #: model:ir.actions.act_window,help:account.action_invoice_tree2
 msgid ""
@@ -561,7 +564,7 @@ msgstr ""
 "                Bấm để ghi nhận một hoá đơn nhà cung cấp.\n"
 "              </p><p>\n"
 "                Bạn có thể kiểm soát hoá đơn từ nhà cung cấp theo\n"
-"                sản phẩm/dịch vụ mà bạn mua hoặc nhận được. Odoo cũng có thể\n"
+"                sản phẩm/dịch vụ mà bạn mua hoặc nhận được. Hệ thống cũng có thể\n"
 "                tự động tạo hoá đơn dự thảo từ các đơn hàng mua (PO) hoặc các phiếu mua hàng (Receipts).\n"
 "              </p>\n"
 "            "

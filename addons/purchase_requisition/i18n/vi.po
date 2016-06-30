@@ -34,14 +34,11 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "            Bấm để bắt đầu một tiến trình đấu thầu mới. \n"
 "          </p><p>\n"
-"            Một cuộc đấu thầu là một thủ tục để tạo ra chào hàng cạnh tranh\n"
-"            từ nhiều nhà thầu khác nhau. Trong một cuộc đấu thầu, bạn có thể "
-"ghi nhận\n"
-"            sản phẩm mà mình cần mua và sẽ xuất hiện trong quá trình tạo RFQ "
-"cho\n"
-"            nhà cung cấp. Kho các nhà thầu đăng ký, bạn có thể xem xét và so "
-"sánh chúng\n"
-"            và bạn có thể xác nhận một vài cái và hủy bỏ một vài cái.\n"
+"            Đấu thầu là một thủ tục để tạo ra chào hàng cạnh tranh từ nhiều \n"
+"            nhà thầu khác nhau. Trong một cuộc đấu thầu, bạn có thể ghi nhận\n"
+"            sản phẩm mà mình cần mua và sẽ xuất hiện trong quá trình tạo Yêu\n"
+"            cầu chào giá (RFQ) cho nhà cung cấp. Kho các nhà thầu đăng ký, bạn\n"
+"            có thể xem xét và so sánh chúng để quyết định xác nhận hay hủy bỏ.\n"
 "          </p>\n"
 "        "
 
@@ -54,22 +51,22 @@ msgstr "Tài khoản quản trị"
 #. module: purchase_requisition
 #: view:purchase.requisition:purchase_requisition.view_purchase_requisition_form
 msgid "Approved by Supplier"
-msgstr "Được phê duyệt bởi Nhà cung cấp"
+msgstr "Được xác nhận bởi Nhà cung cấp"
 
 #. module: purchase_requisition
 #: model:ir.actions.act_window,name:purchase_requisition.action_bid_line_qty
 msgid "Bid Line Qty"
-msgstr "Bid Line Qty"
+msgstr "Số lượng nhận thầu"
 
 #. module: purchase_requisition
 #: model:ir.actions.act_window,name:purchase_requisition.purchase_line_tree
 msgid "Bid Lines"
-msgstr "Bid Lines"
+msgstr "Nhận thầu chi tiết"
 
 #. module: purchase_requisition
 #: selection:purchase.requisition,state:0
 msgid "Bid Selection"
-msgstr "Bid Selection"
+msgstr "Chọn thầu"
 
 #. module: purchase_requisition
 #: field:purchase.requisition,exclusive:0
@@ -106,7 +103,7 @@ msgstr "Mời thầu đang đàm phán"
 #. module: purchase_requisition
 #: view:purchase.requisition:purchase_requisition.view_purchase_requisition_filter
 msgid "Call for Bids where bids are closed"
-msgstr "Mời thầu mà đã đóng"
+msgstr "Mời thầu đã đóng"
 
 #. module: purchase_requisition
 #: view:website:purchase_requisition.report_purchaserequisitions
@@ -161,7 +158,7 @@ msgstr "Bị hủy bởi một cuộc mời thầu liên quan tới yêu cầu c
 #. module: purchase_requisition
 #: model:ir.model,name:purchase_requisition.model_bid_line_qty
 msgid "Change Bid line quantity"
-msgstr "Change Bid line quantity"
+msgstr "Thay đổi số lượng nhận thầu"
 
 #. module: purchase_requisition
 #: view:bid.line.qty:purchase_requisition.view_bid_line_qty
@@ -460,7 +457,7 @@ msgstr "Đơn hàng"
 #. module: purchase_requisition
 #: view:purchase.order:purchase_requisition.purchase_order_search_inherit
 msgid "Purchase Orders with requisition"
-msgstr "Purchase Orders with requisition"
+msgstr "Yêu cầu với mua hàng"
 
 #. module: purchase_requisition
 #: model:ir.model,name:purchase_requisition.model_purchase_requisition
