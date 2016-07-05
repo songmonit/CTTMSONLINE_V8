@@ -104,14 +104,14 @@ msgstr " Trình tự ra"
 #: code:addons/stock/stock.py:3713
 #, python-format
 msgid " Sequence packing"
-msgstr ""
+msgstr "Trình tự đóng gói"
 
 #. module: stock
 #: code:addons/stock/stock.py:3438
 #: code:addons/stock/stock.py:3715
 #, python-format
 msgid " Sequence picking"
-msgstr ""
+msgstr "Trình tự picking"
 
 #. module: stock
 #: field:stock.inventory,move_ids_exist:0
@@ -220,7 +220,9 @@ msgid "<p class=\"oe_view_nocontent_create\">\n"
 "                customers.\n"
 "              </p>\n"
 "            "
-msgstr ""
+msgstr "<p class=\"oe_view_nocontent_create\">\n"
+"                Bấm để tạo đơn giao hàng của sản phẩm này.\n"
+"              </p><p>\n"
 
 #. module: stock
 #: model:ir.actions.act_window,help:stock.action_location_form
@@ -241,7 +243,9 @@ msgid "<p class=\"oe_view_nocontent_create\">\n"
 "                physical, partner or virtual locations.\n"
 "              </p>\n"
 "            "
-msgstr ""
+msgstr "<p class=\"oe_view_nocontent_create\">\n"
+"                Bấm để thêm vị trí - địa điểm.\n"
+"              </p><p>\n"
 
 #. module: stock
 #: model:ir.actions.act_window,help:stock.action_orderpoint_form
@@ -405,7 +409,7 @@ msgstr "<p>Không tìm thấy một lô hàng để hiển thị.</p>"
 #: code:addons/stock/stock.py:2704
 #, python-format
 msgid "A Pack"
-msgstr ""
+msgstr "Gói"
 
 #. module: stock
 #: field:report.stock.lines.date,active:0
@@ -632,7 +636,7 @@ msgstr "Máy quét Mã vạch"
 #. module: stock
 #: selection:stock.warehouse.orderpoint,logic:0
 msgid "Best price (not yet active!)"
-msgstr ""
+msgstr "Giá tốt nhất (Chưa kích hoạt)"
 
 #. module: stock
 #: selection:stock.warehouse,delivery_steps:0
@@ -643,7 +647,7 @@ msgstr "Mang hàng hóa ra địa điểm xuất (output) trước khi bàn giao
 #: view:stock.quant.package:stock.view_quant_package_form
 #: field:stock.quant.package,quant_ids:0
 msgid "Bulk Content"
-msgstr ""
+msgstr "Cồng kềnh"
 
 #. module: stock
 #: code:addons/stock/stock.py:2085
@@ -723,7 +727,7 @@ msgstr "Đã hủy"
 #: code:addons/stock/stock.py:1911
 #, python-format
 msgid "Cannot unreserve a done move"
-msgstr ""
+msgstr "Không thể bỏ xí trước các đơn hàng đã hoàn thành nhập kho"
 
 #. module: stock
 #: field:product.template,loc_case:0
@@ -780,7 +784,7 @@ msgstr "Số lượng đã kiểm tra"
 #. module: stock
 #: help:stock.move,partially_available:0
 msgid "Checks if the move has some stock reserved"
-msgstr ""
+msgstr "Chọn, nếu chuyển kho có sp xí trước"
 
 #. module: stock
 #. openerp-web
@@ -910,7 +914,7 @@ msgstr "Nội dung"
 #. module: stock
 #: field:stock.location,posx:0
 msgid "Corridor (X)"
-msgstr "Hành lang (X)"
+msgstr "Hàng (X)"
 
 #. module: stock
 #: field:stock.pack.operation,cost:0
@@ -1023,7 +1027,7 @@ msgstr "Tạo vào"
 #. module: stock
 #: view:stock.move:stock.view_move_search
 msgid "Creation"
-msgstr ""
+msgstr "Tạo"
 
 #. module: stock
 #: field:stock.move,create_date:0
@@ -1202,12 +1206,12 @@ msgstr "Địa điểm nguồn mặc định"
 #. module: stock
 #: help:stock.warehouse,reception_steps:0
 msgid "Default incoming route to follow"
-msgstr ""
+msgstr "Cách thức nhập hàng mặc định"
 
 #. module: stock
 #: help:stock.warehouse,delivery_steps:0
 msgid "Default outgoing route to follow"
-msgstr ""
+msgstr "Cách thức xuất hàng mặc định"
 
 #. module: stock
 #: selection:stock.move,procure_method:0
@@ -1222,12 +1226,12 @@ msgstr "Tuyến đường mặc định thông qua nhà kho"
 #. module: stock
 #: help:stock.location,putaway_strategy_id:0
 msgid "Defines the default method used for suggesting the exact location (shelf) where to store the products. This method can be enforced at the product category level, and a fallback is made on the parent locations if none is set here."
-msgstr "Xác định phương thức mặc định được sử dụng để đề xuất địa điểm (giá/kệ) chính xác để lưu trữ sản phẩm. Phương thức này có thể áp dụng ở cấp nhóm sản phẩm và có thể áp dụng trên địa điểm cha nếu không được thiết lập ở đây."
+msgstr "Xác định phương thức mặc định được sử dụng để đề xuất địa điểm chính xác để lưu trữ sản phẩm (giá/kệ). Phương thức này có thể áp dụng ở cấp nhóm sản phẩm và có thể áp dụng trên địa điểm cha nếu không được thiết lập."
 
 #. module: stock
 #: help:stock.location,removal_strategy_id:0
 msgid "Defines the default method used for suggesting the exact location (shelf) where to take the products from, which lot etc. for this location. This method can be enforced at the product category level, and a fallback is made on the parent locations if none is set here."
-msgstr "Xác định phương thức mặc định được sử dụng để đề xuất địa điểm (giá/kệ) chính xác mà từ đó lấy sản phẩm ra, hay từ lô nào, v.v. đối với địa điểm này. Phương thức này có thể áp dụng ở cấp nhóm sản phẩm và có thể áp dụng trên địa điểm cha nếu không được thiết lập ở đây."
+msgstr "Xác định phương thức mặc định được sử dụng để đề xuất địa điểm chính xác (giá/kệ) lấy sản phẩm ra, hay từ lô nào, v.v. đối với địa điểm này. Phương thức này có thể áp dụng ở cấp nhóm sản phẩm và có thể áp dụng theo địa điểm cha nếu không được thiết lập."
 
 #. module: stock
 #: view:procurement.rule:stock.view_procurement_rule_form_stock_inherit
@@ -1435,7 +1439,7 @@ msgstr "Ngày hết hạn trên số serial"
 #: code:addons/stock/stock.py:1372
 #, python-format
 msgid "Extra Move: "
-msgstr ""
+msgstr "Dịch chuyển mở rộng"
 
 #. module: stock
 #: help:product.removal,method:0
@@ -1555,13 +1559,13 @@ msgstr "Giao hàng tương lai"
 #: code:addons/stock/product.py:318
 #, python-format
 msgid "Future P&L"
-msgstr ""
+msgstr "Dự báo P&L"
 
 #. module: stock
 #: code:addons/stock/product.py:330
 #, python-format
 msgid "Future Productions"
-msgstr ""
+msgstr "Dự báo SP"
 
 #. module: stock
 #: code:addons/stock/product.py:324
@@ -1594,7 +1598,7 @@ msgstr "Tạo mua sắm / cung ứng theo thời gian thực"
 #. module: stock
 #: help:stock.fixed.putaway.strat,sequence:0
 msgid "Give to the more specialized category, a higher priority to have them in top of the list."
-msgstr ""
+msgstr "Cung cấp hạng mục chuyên biệt, bạn có thể đặt mức độ ưu tiên cho sanh sách"
 
 #. module: stock
 #: help:stock.warehouse,default_resupply_wh_id:0
@@ -1619,7 +1623,7 @@ msgstr "Nhóm theo..."
 #. module: stock
 #: view:procurement.order:stock.view_procurement_form_stock_inherit
 msgid "Group's Pickings"
-msgstr ""
+msgstr "Dỡ hàng theo nhóm"
 
 #. module: stock
 #: field:stock.pack.operation,processed:0
@@ -1766,12 +1770,12 @@ msgstr "Đang xử lý"
 #. module: stock
 #: field:stock.warehouse,in_type_id:0
 msgid "In Type"
-msgstr ""
+msgstr "Kiểu nhập"
 
 #. module: stock
 #: help:procurement.order,partner_dest_id:0
 msgid "In case of dropshipping, we need to know the destination address more precisely"
-msgstr "Trong trường hợp dropshipping, chúng ta cần biết địa chỉ đích chính xác hơn nữa"
+msgstr "Trong trường hợp dropshipping, chúng ta cần biết địa chỉ đích chính xác"
 
 #. module: stock
 #: field:product.product,incoming_qty:0
@@ -1806,12 +1810,12 @@ msgstr "Mã tiêu chuẩn Incoterm"
 #: view:stock.incoterms:stock.stock_incoterms_form
 #: view:stock.incoterms:stock.view_incoterms_tree
 msgid "Incoterms"
-msgstr ""
+msgstr "Incoterms - Quy tắc TMại"
 
 #. module: stock
 #: help:stock.incoterms,name:0
 msgid "Incoterms are series of sales terms. They are used to divide transaction costs and responsibilities between buyer and seller and reflect state-of-the-art transportation practices."
-msgstr ""
+msgstr "Quy tắc thương mại quốc tế quy định những quy tắc có liên quan đến giá cả và trách nhiệm của các bên (bên bán và bên mua) trong một hoạt động thương mại quốc tế."
 
 #. module: stock
 #: code:addons/stock/stock.py:2084
@@ -1903,7 +1907,7 @@ msgstr "Số serial/Lô hàng đã kiểm kho"
 #. module: stock
 #: field:stock.inventory,partner_id:0
 msgid "Inventoried Owner"
-msgstr ""
+msgstr "Sở hữu đã kiểm kê"
 
 #. module: stock
 #: field:stock.inventory,package_id:0
@@ -1991,7 +1995,7 @@ msgstr "Dịch chuyển kiểm kho."
 #. module: stock
 #: help:stock.inventory,name:0
 msgid "Inventory Name."
-msgstr ""
+msgstr "Tên kiểm kê"
 
 #. module: stock
 #: view:stock.inventory:stock.view_inventory_filter
@@ -2194,7 +2198,7 @@ msgstr "Linked Quant"
 #. module: stock
 #: view:stock.location:stock.view_location_form
 msgid "Localization"
-msgstr "Lưu trú / Vị trí / Định vị"
+msgstr "Vị trí / Định vị"
 
 #. module: stock
 #: field:product.product,location_id:0
@@ -2305,18 +2309,18 @@ msgstr "Mã vạch của Lô"
 #. module: stock
 #: view:stock.inventory:stock.view_inventory_tree
 msgid "Lot Inventory"
-msgstr ""
+msgstr "Lô tồn kho"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_production_lot
 msgid "Lot/Serial"
-msgstr "Lô / Sê-ri"
+msgstr "Lô / Serial"
 
 #. module: stock
 #: field:stock.pack.operation,lot_id:0
 #: field:stock.transfer_details_items,lot_id:0
 msgid "Lot/Serial Number"
-msgstr "Số Lô / Sê-ri"
+msgstr "Số Lô / Serial"
 
 #. module: stock
 #: view:product.template:stock.view_template_property_form
@@ -2332,7 +2336,7 @@ msgstr "Quy tắc MTO"
 #. module: stock
 #: model:ir.model,name:stock.model_make_procurement
 msgid "Make Procurements"
-msgstr "Tạo mua sắm/cung ứng"
+msgstr "Tạo mua sắm-cung ứng"
 
 #. module: stock
 #: code:addons/stock/stock.py:3279
@@ -2344,7 +2348,7 @@ msgstr "Cung ứng theo đơn hàng (MTO)"
 #. module: stock
 #: selection:stock.warehouse,delivery_steps:0
 msgid "Make packages into a dedicated location, then bring them to the output location for shipping (Pick + Pack + Ship)"
-msgstr "Đóng gói vào một địa điểm chuyên dụng (chuyển vào địa điểm đóng gói), rồi đưa ra điểm điểm xuất (Output) để chờ giao (Pick + Pack + Ship)"
+msgstr "Chuyển vào địa điểm đóng gói, rồi đưa ra địa điểm xuất (Output) để chờ giao (Pick + Pack + Ship)"
 
 #. module: stock
 #: model:res.groups,name:stock.group_tracking_owner
@@ -2354,7 +2358,7 @@ msgstr ""
 #. module: stock
 #: model:res.groups,name:stock.group_production_lot
 msgid "Manage Lots / Serial Numbers"
-msgstr "Quản lý Số Lô / Sê-ri"
+msgstr "Quản lý Số Lô / Serial"
 
 #. module: stock
 #: model:res.groups,name:stock.group_locations
@@ -2364,7 +2368,7 @@ msgstr "Quản lý đa Địa điểm và Nhà kho"
 #. module: stock
 #: model:res.groups,name:stock.group_tracking_lot
 msgid "Manage Packages"
-msgstr ""
+msgstr "Quản lý đóng gói"
 
 #. module: stock
 #: model:res.groups,name:stock.group_adv_location
@@ -2399,7 +2403,7 @@ msgstr "Manage owner on stock"
 #. module: stock
 #: field:stock.config.settings,module_stock_picking_wave:0
 msgid "Manage picking wave"
-msgstr "Quản lý Xuất/Nhập theo đợt/lớp (Picking Wave)"
+msgstr "Quản lý Xuất/Nhập theo đợt (Picking Wave)"
 
 #. module: stock
 #: model:res.groups,name:stock.group_stock_manager
@@ -2573,7 +2577,7 @@ msgstr ""
 #. module: stock
 #: view:procurement.rule:stock.view_procurement_rule_form_stock_inherit
 msgid "Moving Options"
-msgstr ""
+msgstr "Tùy chọn dịch chuyển"
 
 #. module: stock
 #: field:product.putaway,name:0
@@ -2626,7 +2630,7 @@ msgstr "Chưa kiểm kho"
 #: code:addons/stock/static/src/js/widgets.js:649
 #, python-format
 msgid "No Picking Available"
-msgstr ""
+msgstr "Dỡ hàng không tồn tại"
 
 #. module: stock
 #: view:report.stock.lines.date:stock.report_stock_lines_date_search
@@ -2638,7 +2642,7 @@ msgstr "Chưa dịch chuyển kho"
 #: code:addons/stock/static/src/xml/picking.xml:195
 #, python-format
 msgid "No picking found."
-msgstr ""
+msgstr "Không thấy dỡ hàng"
 
 #. module: stock
 #: code:addons/stock/wizard/stock_return_picking.py:87
@@ -2709,7 +2713,7 @@ msgstr "Thực tế:"
 #: code:addons/stock/stock.py:2702
 #, python-format
 msgid "One Lot/Serial Number"
-msgstr ""
+msgstr "Chỉ một số serial"
 
 #. module: stock
 #: code:addons/stock/stock.py:2699
@@ -2834,17 +2838,17 @@ msgstr "Nguồn gốc"
 #. module: stock
 #: field:stock.move,origin_returned_move_id:0
 msgid "Origin return move"
-msgstr ""
+msgstr "Nguồn gốc trả hàng"
 
 #. module: stock
 #: field:stock.move,move_orig_ids:0
 msgid "Original Move"
-msgstr ""
+msgstr "Nguồn gốc dịch chuyển"
 
 #. module: stock
 #: field:stock.warehouse,out_type_id:0
 msgid "Out Type"
-msgstr ""
+msgstr "Kiểu xuất"
 
 #. module: stock
 #: field:product.product,outgoing_qty:0
@@ -2855,7 +2859,7 @@ msgstr "Số lượng ra"
 #. module: stock
 #: field:stock.warehouse,delivery_steps:0
 msgid "Outgoing Shippings"
-msgstr ""
+msgstr "Xuất hàng"
 
 #. module: stock
 #: code:addons/stock/stock.py:3564
@@ -2901,7 +2905,7 @@ msgstr ""
 #: code:addons/stock/product.py:320
 #, python-format
 msgid "P&L Qty"
-msgstr ""
+msgstr "SLượng P&L"
 
 #. module: stock
 #: code:addons/stock/stock.py:3503
@@ -2909,17 +2913,17 @@ msgstr ""
 #: view:stock.transfer_details:stock.view_stock_enter_transfer_details
 #, python-format
 msgid "Pack"
-msgstr ""
+msgstr "Gói"
 
 #. module: stock
 #: field:stock.picking,pack_operation_exist:0
 msgid "Pack Operation Exists?"
-msgstr ""
+msgstr "Hoạt động đóng gói không tồn tại"
 
 #. module: stock
 #: field:stock.warehouse,pack_type_id:0
 msgid "Pack Type"
-msgstr "Kiểm Gói"
+msgstr "Kiểu Gói"
 
 #. module: stock
 #: view:stock.quant:stock.quant_search_view
@@ -2934,42 +2938,42 @@ msgstr "Gói"
 #. module: stock
 #: model:ir.actions.report.xml,name:stock.action_report_quant_package_barcode_small
 msgid "Package BarCode"
-msgstr ""
+msgstr "Mã vạch gói"
 
 #. module: stock
 #: model:ir.actions.report.xml,name:stock.action_report_quant_package_barcode
 msgid "Package BarCode with Contents"
-msgstr ""
+msgstr "Mã gói với nội dung"
 
 #. module: stock
 #: view:stock.quant.package:stock.quant_package_search_view
 #: field:stock.quant.package,complete_name:0
 msgid "Package Name"
-msgstr ""
+msgstr "Tên gói"
 
 #. module: stock
 #: view:stock.quant.package:stock.view_quant_package_form
 #: field:stock.quant.package,name:0
 msgid "Package Reference"
-msgstr ""
+msgstr "Tham chiếu gói"
 
 #. module: stock
 #. openerp-web
 #: code:addons/stock/static/src/xml/picking.xml:57
 #, python-format
 msgid "Package type"
-msgstr ""
+msgstr "Kiểu gói"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_package_view
 #: model:ir.ui.menu,name:stock.menu_package
 msgid "Packages"
-msgstr ""
+msgstr "Gói"
 
 #. module: stock
 #: view:stock.transfer_details:stock.view_stock_enter_transfer_details
 msgid "Packages To Move"
-msgstr ""
+msgstr "Đóng gói để chuyển"
 
 #. module: stock
 #: view:stock.quant:stock.quant_search_view
@@ -3014,7 +3018,7 @@ msgstr "Địa điểm Cha"
 #. module: stock
 #: field:stock.quant.package,parent_id:0
 msgid "Parent Package"
-msgstr ""
+msgstr "Gói cha"
 
 #. module: stock
 #: selection:stock.picking,move_type:0
@@ -3064,19 +3068,19 @@ msgstr "Physical Packages"
 #: code:addons/stock/stock.py:3513
 #, python-format
 msgid "Pick"
-msgstr ""
+msgstr "Dỡ"
 
 #. module: stock
 #: code:addons/stock/stock.py:3606
 #, python-format
 msgid "Pick + Pack + Ship"
-msgstr "Pick + Pack + Ship"
+msgstr "Dỡ(Pick) + Gói(Pack) + Giao(Ship)"
 
 #. module: stock
 #: code:addons/stock/stock.py:3605
 #, python-format
 msgid "Pick + Ship"
-msgstr "Pick + Ship"
+msgstr "Dỡ(Pick) + Giao(Ship)"
 
 #. module: stock
 #: field:stock.warehouse,pick_type_id:0
@@ -3209,17 +3213,17 @@ msgstr ""
 #. module: stock
 #: field:procurement.order,route_ids:0
 msgid "Preferred Routes"
-msgstr "Các tuyến ưu thích"
+msgstr "Các tuyến ưa thích"
 
 #. module: stock
 #: help:stock.move,route_ids:0
 msgid "Preferred route to be followed by the procurement order"
-msgstr "Tuyến ưa thích là tuyến được procurement chạy theo"
+msgstr "Tuyến ưa thích là tuyến được Cung ứng chạy theo"
 
 #. module: stock
 #: help:procurement.order,route_ids:0
 msgid "Preferred route to be followed by the procurement order. Usually copied from the generating document (SO) but could be set up manually."
-msgstr "Tuyến ưa thích là tuyến được procurement chạy theo. Thường được sao chép từ tài liệu mà tạo ra nhu cầu cung ứng này, nhưng có thể thiết lập thủ công."
+msgstr "Tuyến ưa thích là tuyến được Cung ứng chạy theo. Thường được sao chép từ tài liệu mà tạo ra nhu cầu cung ứng này, nhưng có thể thiết lập thủ công."
 
 #. module: stock
 #. openerp-web
@@ -3432,7 +3436,7 @@ msgstr "Địa điểm Sản xuất"
 #. module: stock
 #: view:website:stock.report_inventory
 msgid "Production Lot"
-msgstr ""
+msgstr "Lô SP"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.act_product_location_open
@@ -3469,7 +3473,7 @@ msgstr "Sản phẩm: "
 #: code:addons/stock/stock.py:1757
 #, python-format
 msgid "Programming Error!"
-msgstr "Lỗi lập trình!"
+msgstr "Lỗi chương trình!"
 
 #. module: stock
 #: field:procurement.rule,propagate:0
@@ -3488,18 +3492,18 @@ msgstr "Cung cấp số lượng các sản phẩm cần trả lại."
 #: view:stock.location.route:stock.stock_location_route_form_view
 #: field:stock.location.route,pull_ids:0
 msgid "Pull Rules"
-msgstr "Quy tắc Pull"
+msgstr "Quy tắc lây ra (Pull)"
 
 #. module: stock
 #: field:stock.move,push_rule_id:0
 msgid "Push Rule"
-msgstr "Quy tắc Push"
+msgstr "Quy tắc đẩy vào (Push)"
 
 #. module: stock
 #: view:stock.location.route:stock.stock_location_route_form_view
 #: field:stock.location.route,push_ids:0
 msgid "Push Rules"
-msgstr "Quy tắc Push"
+msgstr "Quy tắc đẩy vào (Push)"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_location_path
@@ -3509,13 +3513,13 @@ msgstr ""
 #. module: stock
 #: field:stock.fixed.putaway.strat,putaway_id:0
 msgid "Put Away Method"
-msgstr ""
+msgstr "Phương thức xếp hàng"
 
 #. module: stock
 #: model:ir.model,name:stock.model_product_putaway
 #: field:stock.location,putaway_strategy_id:0
 msgid "Put Away Strategy"
-msgstr ""
+msgstr "Quy tắc xếp hàng"
 
 #. module: stock
 #. openerp-web
@@ -3529,12 +3533,12 @@ msgstr "Bỏ vào Giỏ"
 #: code:addons/stock/static/src/xml/picking.xml:110
 #, python-format
 msgid "Put in Pack"
-msgstr "Đưa vào Gói"
+msgstr "Đóng vào Gói"
 
 #. module: stock
 #: view:product.putaway:stock.view_putaway
 msgid "Putaway"
-msgstr ""
+msgstr "Cất đi"
 
 #. module: stock
 #: field:stock.warehouse.orderpoint,qty_multiple:0
@@ -3844,7 +3848,7 @@ msgstr ""
 #: model:ir.model,name:stock.model_product_removal
 #: field:stock.location,removal_strategy_id:0
 msgid "Removal Strategy"
-msgstr ""
+msgstr "Quy tắc lấy hàng"
 
 #. module: stock
 #: code:addons/stock/stock.py:492
@@ -4085,7 +4089,7 @@ msgstr "Địa điểm phế liệu"
 #. module: stock
 #: model:ir.actions.act_window,name:stock.move_scrap
 msgid "Scrap Move"
-msgstr ""
+msgstr "Chuyển thành phế liệu"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_move_scrap
@@ -4204,7 +4208,7 @@ msgstr "Kệ/Ngăn/Giá (Y)"
 #: code:addons/stock/stock.py:3604
 #, python-format
 msgid "Ship Only"
-msgstr ""
+msgstr "Chỉ bàn giao"
 
 #. module: stock
 #: selection:stock.warehouse,delivery_steps:0
@@ -4823,7 +4827,7 @@ msgstr "Số lượng tổng"
 #. module: stock
 #: field:product.category,total_route_ids:0
 msgid "Total routes"
-msgstr ""
+msgstr "Tổng tuyến đường"
 
 #. module: stock
 #: code:addons/stock/stock.py:1619
@@ -4975,7 +4979,7 @@ msgstr "Đơn vị đo lường"
 #: code:addons/stock/stock.py:3957
 #, python-format
 msgid "Unknown Pack"
-msgstr ""
+msgstr "Gói ko xác định"
 
 #. module: stock
 #: selection:stock.warehouse,reception_steps:0
