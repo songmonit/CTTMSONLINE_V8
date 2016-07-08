@@ -61,6 +61,5 @@
             <field name="code">DDP</field>
             <field name="name">DELIVERED DUTY PAID</field>
         </record>
-
     </data>
 </openerp>

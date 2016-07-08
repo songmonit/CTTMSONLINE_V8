@@ -1941,14 +1941,11 @@
       background-image: -o-linear-gradient(top, #fcfcfc, #dedede);
       background-image: linear-gradient(to bottom, #fcfcfc, #dedede); }
       .openerp ul.oe_form_status li:first-child > .label, .openerp ul.oe_form_status_clickable li:first-child > .label {
-        border-left: 1px solid #cacaca;
         padding-left: 14px; }
-      .openerp ul.oe_form_status li:last-child, .openerp ul.oe_form_status_clickable li:last-child {
-        border-right: 1px solid #cacaca; }
-        .openerp ul.oe_form_status li:last-child > .label, .openerp ul.oe_form_status_clickable li:last-child > .label {
-          padding-right: 14px; }
-        .openerp ul.oe_form_status li:last-child > .arrow, .openerp ul.oe_form_status_clickable li:last-child > .arrow {
-          display: none; }
+      .openerp ul.oe_form_status li:last-child > .label, .openerp ul.oe_form_status_clickable li:last-child > .label {
+        padding-right: 14px; }
+      .openerp ul.oe_form_status li:last-child > .arrow, .openerp ul.oe_form_status_clickable li:last-child > .arrow {
+        display: none; }
       .openerp ul.oe_form_status li > .label, .openerp ul.oe_form_status_clickable li > .label {
         color: #4c4c4c;
         text-shadow: 0 1px 1px #fcfcfc, 0 -1px 1px #dedede;
@@ -1962,7 +1959,7 @@
         font-weight: normal; }
       .openerp ul.oe_form_status li > .arrow, .openerp ul.oe_form_status_clickable li > .arrow {
         width: 17px;
-        height: 30px;
+        height: 29px;
         display: inline-block;
         vertical-align: top;
         overflow: hidden;
@@ -1972,7 +1969,7 @@
           width: 24px;
           height: 24px;
           display: inline-block;
-          margin-left: -12px;
+          margin-left: -11px;
           margin-top: 3px;
           box-shadow: -1px 1px 2px rgba(255, 255, 255, 0.2), inset -1px 1px 1px rgba(0, 0, 0, 0.2);
           background-color: #dedede;

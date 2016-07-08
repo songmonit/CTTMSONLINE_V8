@@ -10694,7 +10694,7 @@ msgstr "For actions, one of the possible action slots: \n"
 #. module: base
 #: view:base.language.export:base.wizard_lang_export
 msgid "For more details about translating Odoo in your language, please refer to the"
-msgstr "For more details about translating Odoo in your language, please refer to the"
+msgstr "For more details about translating system in your language, please refer to the"
 
 #. module: base
 #: help:ir.model.fields,relation_field:0
@@ -11621,7 +11621,7 @@ msgstr "If you enable this option, existing translations (including custom ones)
 #. module: base
 #: help:ir.ui.menu,groups_id:0
 msgid "If you have groups, the visibility of this menu will be based on these groups. If this field is empty, Odoo will compute visibility based on the related object's read access."
-msgstr "If you have groups, the visibility of this menu will be based on these groups. If this field is empty, Odoo will compute visibility based on the related object's read access."
+msgstr "If you have groups, the visibility of this menu will be based on these groups. If this field is empty, system will compute visibility based on the related object's read access."
 
 #. module: base
 #: help:ir.model.access,active:0
@@ -12647,7 +12647,7 @@ msgstr "Lets you install various interesting but non-essential tools like Survey
 #. module: base
 #: model:ir.module.category,description:base.module_category_report_designer
 msgid "Lets you install various tools to simplify and enhance Odoo's report creation."
-msgstr "Lets you install various tools to simplify and enhance Odoo's report creation."
+msgstr "Lets you install various tools to simplify and enhance system's report creation."
 
 #. module: base
 #: view:ir.logging:base.ir_logging_search_view
@@ -13012,7 +13012,7 @@ msgstr "Manage Website and qWeb view"
 #. module: base
 #: model:ir.actions.act_window,help:base.grant_menu_access
 msgid "Manage and customize the items available and displayed in your Odoo system menu. You can delete an item by clicking on the box at the beginning of each line and then delete it through the button that appeared. Items can be assigned to specific groups in order to make them accessible to some users within the system."
-msgstr "Manage and customize the items available and displayed in your Odoo system menu. You can delete an item by clicking on the box at the beginning of each line and then delete it through the button that appeared. Items can be assigned to specific groups in order to make them accessible to some users within the system."
+msgstr "Manage and customize the items available and displayed in your system system menu. You can delete an item by clicking on the box at the beginning of each line and then delete it through the button that appeared. Items can be assigned to specific groups in order to make them accessible to some users within the system."
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_customer_relationship_management
@@ -13980,12 +13980,12 @@ msgstr "Đối tượng:"
 #: code:addons/base/static/src/js/apps.js:179
 #, python-format
 msgid "Odoo Apps will be available soon"
-msgstr ""
+msgstr "Apps will be available soon"
 
 #. module: base
 #: help:ir.sequence,padding:0
 msgid "Odoo will automatically adds some '0' on the left of the 'Next Number' to get the required padding size."
-msgstr "Odoo sẽ tự động thêm một vài số '0' vào bên trái của 'Số tiếp theo' để đạt số chữ số bằng 'Số chữ số'."
+msgstr "system sẽ tự động thêm một vài số '0' vào bên trái của 'Số tiếp theo' để đạt số chữ số bằng 'Số chữ số'."
 
 #. module: base
 #: model:res.groups,name:base.group_hr_user
@@ -14738,7 +14738,7 @@ msgstr "Portal Stock"
 msgid "Portal members have specific access rights (such as record rules and restricted menus).\n"
 "                They usually do not belong to the usual Odoo groups."
 msgstr "Portal members have specific access rights (such as record rules and restricted menus).\n"
-"                They usually do not belong to the usual Odoo groups."
+"                They usually do not belong to the usual system groups."
 
 #. module: base
 #: model:res.country,name:base.pt
@@ -14988,7 +14988,7 @@ msgstr "Dự án công khai"
 msgid "Public users have specific access rights (such as record rules and restricted menus).\n"
 "                They usually do not belong to the usual Odoo groups."
 msgstr "Public users have specific access rights (such as record rules and restricted menus).\n"
-"                They usually do not belong to the usual Odoo groups."
+"                They usually do not belong to the usual system groups."
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_membership
@@ -15789,7 +15789,7 @@ msgstr "Quản lý bán hàng và kho"
 #: view:res.partner:base.view_res_partner_filter
 #: field:res.partner,user_id:0
 msgid "Salesperson"
-msgstr "Nhân viên bán hàng"
+msgstr "Nhân viên bán(mua) hàng"
 
 #. module: base
 #: model:res.country,name:base.ws
@@ -16804,7 +16804,7 @@ msgstr "Lưu trữ TGZ"
 msgid "TGZ format: this is a compressed archive containing a PO file, directly suitable\n"
 "                                for uploading to Odoo's translation platform,"
 msgstr "TGZ format: this is a compressed archive containing a PO file, directly suitable\n"
-"                                for uploading to Odoo's translation platform,"
+"                                for uploading to system's translation platform,"
 
 #. module: base
 #: code:addons/base/res/res_company.py:167
@@ -17091,7 +17091,7 @@ msgstr "Công ty mà người dùng này đang làm việc."
 #. module: base
 #: model:ir.actions.act_window,help:base.act_ir_actions_todo_form
 msgid "The configuration wizards are used to help you configure a new instance of Odoo. They are launched during the installation of new modules, but you can choose to restart some wizards manually from this menu."
-msgstr "The configuration wizards are used to help you configure a new instance of Odoo. They are launched during the installation of new modules, but you can choose to restart some wizards manually from this menu."
+msgstr "The configuration wizards are used to help you configure a new instance of system. They are launched during the installation of new modules, but you can choose to restart some wizards manually from this menu."
 
 #. module: base
 #: sql_constraint:res.currency:0
@@ -17116,17 +17116,17 @@ msgstr "The field on the current object that links to the target object record (
 #. module: base
 #: help:res.country,name:0
 msgid "The full name of the country."
-msgstr "Tên đầy đủ của quốc gia."
+msgstr "Tên quốc gia."
 
 #. module: base
 #: help:workflow.transition,group_id:0
 msgid "The group that a user must have to be authorized to validate this transition."
-msgstr "The group that a user must have to be authorized to validate this transition."
+msgstr "Người dùng phải thuộc nhóm được ủy quyền xác nhận các chuyển đổi này."
 
 #. module: base
 #: help:res.partner,user_id:0
 msgid "The internal user that is in charge of communicating with this contact if any."
-msgstr "The internal user that is in charge of communicating with this contact if any."
+msgstr "Nhân viên (user) phụ trách làm việc với đối tác này."
 
 #. module: base
 #: help:ir.model,inherited_model_ids:0
@@ -17184,7 +17184,7 @@ msgstr "Tên ngôn ngữ phải duy nhất"
 #: code:addons/base/module/module.py:327
 #, python-format
 msgid "The name of the module must be unique !"
-msgstr "Tên của mô đun phải duy nhất !"
+msgstr "Tên của module phải duy nhất !"
 
 #. module: base
 #: help:ir.sequence,number_increment:0
@@ -18282,7 +18282,7 @@ msgstr "Views"
 #. module: base
 #: model:ir.actions.act_window,help:base.action_ui_view
 msgid "Views allows you to personalize each view of Odoo. You can add new fields, move fields, rename them or delete the ones that you do not need."
-msgstr "Views allows you to personalize each view of Odoo. You can add new fields, move fields, rename them or delete the ones that you do not need."
+msgstr "Views allows you to personalize each view of system. You can add new fields, move fields, rename them or delete the ones that you do not need."
 
 #. module: base
 #: model:res.country,name:base.vg
@@ -18531,7 +18531,7 @@ msgstr "When a relationship field is selected as first field, this field shows t
 #. module: base
 #: view:workflow:base.view_workflow_diagram
 msgid "When customizing a workflow, be sure you do not modify an existing node or arrow, but rather add new nodes or arrows. If you absolutly need to modify a node or arrow, you can only change fields that are empty or set to the default value. If you don't do that, your customization will be overwrited at the next update or upgrade to a future version of Odoo."
-msgstr "When customizing a workflow, be sure you do not modify an existing node or arrow, but rather add new nodes or arrows. If you absolutly need to modify a node or arrow, you can only change fields that are empty or set to the default value. If you don't do that, your customization will be overwrited at the next update or upgrade to a future version of Odoo."
+msgstr "When customizing a workflow, be sure you do not modify an existing node or arrow, but rather add new nodes or arrows. If you absolutly need to modify a node or arrow, you can only change fields that are empty or set to the default value. If you don't do that, your customization will be overwrited at the next update or upgrade to a future version of system."
 
 #. module: base
 #: help:ir.actions.server,sequence:0
@@ -18735,7 +18735,7 @@ msgstr "Bạn không thể đăng ký hai phông chữ với cùng một tên"
 #: code:addons/base/res/res_users.py:374
 #, python-format
 msgid "You can not remove the admin user as it is used internally for resources created by Odoo (updates, module installation, ...)"
-msgstr "You can not remove the admin user as it is used internally for resources created by Odoo (updates, module installation, ...)"
+msgstr "You can not remove the admin user as it is used internally for resources created by system (updates, module installation, ...)"
 
 #. module: base
 #: help:res.country,address_format:0
@@ -18955,13 +18955,13 @@ msgstr "vd: Giám đốc bán hàng"
 #. module: base
 #: view:base.language.import:base.view_base_import_language
 msgid "e.g. en_US"
-msgstr "e.g. vi_VN"
+msgstr "Vd: vi_VN"
 
 #. module: base
 #: view:res.company:base.view_company_form
 #: view:res.partner:base.view_partner_form
 msgid "e.g. www.odoo.com"
-msgstr "e.g. www.odoo.com"
+msgstr "vd: www.cttms.com"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale
