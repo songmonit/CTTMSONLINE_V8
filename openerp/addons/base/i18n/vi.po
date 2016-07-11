@@ -8480,7 +8480,7 @@ msgstr "Christmas Island"
 #: field:res.partner.bank,city:0
 #, python-format
 msgid "City"
-msgstr "Thành phố"
+msgstr "Quận/Huyện"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_claim_from_delivery
@@ -10441,7 +10441,7 @@ msgstr "Fax:"
 #: field:res.company,state_id:0
 #: field:res.partner.bank,state_id:0
 msgid "Fed. State"
-msgstr "Bang / Tỉnh thành trực thuộc TƯ"
+msgstr "Tỉnh/TP"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_country_state
@@ -16511,17 +16511,17 @@ msgstr "Bắt đầu cấu hình"
 #: view:res.partner.bank:base.view_partner_bank_form
 #, python-format
 msgid "State"
-msgstr "Bang / Tỉnh thành trực thuộc TƯ"
+msgstr "Tỉnh/TP"
 
 #. module: base
 #: field:res.country.state,code:0
 msgid "State Code"
-msgstr "Mã Bang / Tỉnh thành trực thuộc TƯ"
+msgstr "Mã Tỉnh/TP"
 
 #. module: base
 #: field:res.country.state,name:0
 msgid "State Name"
-msgstr "Tên Bang / Tỉnh thành trực thuộc TƯ"
+msgstr "Tên Tỉnh/TP"
 
 #. module: base
 #: field:base.language.install,state:0

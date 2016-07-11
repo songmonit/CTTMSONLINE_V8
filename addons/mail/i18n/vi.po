@@ -1433,9 +1433,9 @@ msgstr "Chính sách cho phép gửi nội dung ở các tài liệu có sử d�
 msgid "Policy to receive emails for new messages pushed to your personal Inbox:\n"
 "- Never: no emails are sent\n"
 "- All Messages: for every notification you receive in your Inbox"
-msgstr "Policy to receive emails for new messages pushed to your personal Inbox:\n"
-"- Never: no emails are sent\n"
-"- All Messages: for every notification you receive in your Inbox"
+msgstr "Chính sach nhận email của hộp thư đến - Inbox:\n"
+"- Không nhận - Never: Không nhận email\n"
+"- Mọi thông điệp - All Messages: Đưa mọi thông điệp vào Inbox"
 
 #. module: mail
 #: field:mail.group,public:0
@@ -1527,7 +1527,7 @@ msgstr ""
 #: code:addons/mail/static/src/xml/mail_followers.xml:41
 #, python-format
 msgid "Remove this follower"
-msgstr "Gỡ người này ra khỏi danh mục theo dõi"
+msgstr "Bỏ người này ra khỏi danh mục theo dõi"
 
 #. module: mail
 #. openerp-web
@@ -1742,7 +1742,7 @@ msgstr "Địa chỉ email gắn với nhóm này. Email gửi đến địa ch�
 #. module: mail
 #: help:mail.alias,alias_model_id:0
 msgid "The model (Odoo Document Kind) to which this alias corresponds. Any incoming email that does not reply to an existing record will cause the creation of a new record of this model (e.g. a Project Task)"
-msgstr ""
+msgstr "The model to which this alias corresponds. Any incoming email that does not reply to an existing record will cause the creation of a new record of this model (e.g. a Project Task)"
 
 #. module: mail
 #: help:mail.alias,alias_name:0

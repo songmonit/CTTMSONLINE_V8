@@ -259,7 +259,7 @@ msgid ""
 "If opt-out is checked, this contact has refused to receive emails for mass "
 "mailing and marketing campaign. Filter 'Available for Mass Mailing' allows "
 "users to filter the partners when performing mass mailing."
-msgstr ""
+msgstr "Nếu được đánh dấu, liên hệ này sẽ từ chối nhận email từ chức năng gửi email hàng loạt (Mass Mailing)."
 
 #. module: email_template
 #: field:email.template,lang:0 field:email_template.preview,lang:0
@@ -269,7 +269,7 @@ msgstr "Ngôn ngữ"
 #. module: email_template
 #: field:email.template,write_uid:0 field:email_template.preview,write_uid:0
 msgid "Last Updated by"
-msgstr "Cập nhật lần cuối bởi"
+msgstr "Cập nhật cuối bởi"
 
 #. module: email_template
 #: field:email.template,write_date:0 field:email_template.preview,write_date:0
