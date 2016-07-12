@@ -9868,7 +9868,7 @@ msgstr "Hoàn tất"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_purchase_double_validation
 msgid "Double Validation on Purchases"
-msgstr "Xác nhận hai lần trên Hợp đồng mua hàng"
+msgstr "Xác nhận hai cấp trên Hợp đồng mua hàng"
 
 #. module: base
 #: model:res.partner.title,shortcut:base.res_partner_title_doctor
@@ -18017,7 +18017,7 @@ msgstr "Used to log into the system"
 #. module: base
 #: help:res.partner,type:0
 msgid "Used to select automatically the right address according to the context in sales and purchases documents."
-msgstr "Used to select automatically the right address according to the context in sales and purchases documents."
+msgstr "Được sử dụng để tự động chọn đúng địa chỉ theo bối cảnh trong các tài liệu mua và bán hàng."
 
 #. module: base
 #: field:change.password.user,user_id:0

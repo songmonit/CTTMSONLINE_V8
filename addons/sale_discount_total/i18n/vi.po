@@ -1,0 +1,164 @@
+# Translation of CTTMS Server.
+# This file contains the translation of the following modules:
+#	* sale_discount_total
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CTTMS Server 2.8beta\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-12 07:08+0000\n"
+"PO-Revision-Date: 2016-07-12 07:08+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_discount_total
+#: view:account.invoice:sale_discount_total.discount_account_invoice_view_form1
+#: view:sale.order:sale_discount_total.discount_sale_view_form
+msgid "(update)"
+msgstr "(cập nhật)"
+
+#. module: sale_discount_total
+#: selection:account.invoice,discount_type:0
+#: selection:sale.order,discount_type:0
+#: view:website:account.report_invoice_document
+msgid "Amount"
+msgstr "Số tiền"
+
+#. module: sale_discount_total
+#: view:sale.order:sale_discount_total.sale_inherit_wkfform_view
+msgid "Approve Order"
+msgstr "Duyệt đơn hàng"
+
+#. module: sale_discount_total
+#: view:website:account.report_invoice_document
+msgid "Description"
+msgstr "Miêu tả"
+
+#. module: sale_discount_total
+#: field:account.invoice,amount_discount:0
+#: field:account.invoice.report,discount:0
+#: field:sale.order,amount_discount:0
+#: field:sale.report,discount:0
+#: view:website:account.report_invoice_document
+#: view:website:sale.report_saleorder_document
+msgid "Discount"
+msgstr "Chiết khấu"
+
+#. module: sale_discount_total
+#: view:website:account.report_invoice_document
+msgid "Discount (%)"
+msgstr "Chiết khấu (%)"
+
+#. module: sale_discount_total
+#: field:account.invoice,discount_rate:0
+#: field:sale.order,discount_rate:0
+msgid "Discount Rate"
+msgstr "Mức chiết khấu"
+
+#. module: sale_discount_total
+#: field:account.invoice,discount_type:0
+msgid "Discount Type"
+msgstr "Chiết khấu theo"
+
+#. module: sale_discount_total
+#: help:sale.config.settings,limit_discount:0
+msgid "Discount after which approval of sale is required."
+msgstr "Chiết khấu sau khi đơn hàng được phê duyệt."
+
+#. module: sale_discount_total
+#: field:sale.config.settings,limit_discount:0
+msgid "Discount limit requires approval %"
+msgstr "Hạn mức chiết khấu yêu cầu phải có phê duyệt %"
+
+#. module: sale_discount_total
+#: field:sale.order,discount_type:0
+msgid "Discount type"
+msgstr "Chiết khấu theo"
+
+#. module: sale_discount_total
+#: field:sale.config.settings,module_sale_discount_approval:0
+msgid "Force two levels of approvals"
+msgstr "Phê duyệt 2 cấp"
+
+#. module: sale_discount_total
+#: model:ir.model,name:sale_discount_total.model_account_invoice
+msgid "Invoice"
+msgstr "Hóa đơn"
+
+#. module: sale_discount_total
+#: model:ir.model,name:sale_discount_total.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Chi tiết hóa đơn"
+
+#. module: sale_discount_total
+#: model:ir.model,name:sale_discount_total.model_account_invoice_report
+msgid "Invoices Statistics"
+msgstr "Thống kê hóa đơn"
+
+#. module: sale_discount_total
+#: selection:account.invoice,discount_type:0
+#: selection:sale.order,discount_type:0
+msgid "Percentage"
+msgstr "Theo (%)"
+
+#. module: sale_discount_total
+#: help:sale.config.settings,module_sale_discount_approval:0
+msgid "Provide a double validation mechanism for sale exceeding minimum discount.\n"
+""
+msgstr "Cung cấp cơ chế xác nhận kép để bán vượt mức chiết khấu thông thường.\n"
+""
+
+#. module: sale_discount_total
+#: view:website:account.report_invoice_document
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: sale_discount_total
+#: view:account.invoice:sale_discount_total.discount_account_invoice_view_form1
+msgid "Recompute taxes and total"
+msgstr "Tính toán lại thuế và tổng tiền"
+
+#. module: sale_discount_total
+#: model:ir.model,name:sale_discount_total.model_sale_order
+msgid "Sales Order"
+msgstr "Đơn hàng"
+
+#. module: sale_discount_total
+#: model:ir.model,name:sale_discount_total.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Dòng hàng Đơn hàng bán"
+
+#. module: sale_discount_total
+#: model:ir.model,name:sale_discount_total.model_sale_report
+msgid "Sales Orders Statistics"
+msgstr "Thống kê đơn hàng"
+
+#. module: sale_discount_total
+#: view:website:account.report_invoice_document
+msgid "Taxes"
+msgstr "Thuế"
+
+#. module: sale_discount_total
+#: help:sale.order,amount_discount:0
+msgid "The total discount."
+msgstr "Tổng chiết khấu."
+
+#. module: sale_discount_total
+#: view:website:account.report_invoice_document
+msgid "Unit Price"
+msgstr "Đơn giá"
+
+#. module: sale_discount_total
+#: view:sale.order:sale_discount_total.sale_inherit_wkfform_view
+msgid "waitingapproval,manual,progress"
+msgstr "waitingapproval,manual,progress"
+
+#. module: sale_discount_total
+#: view:sale.order:sale_discount_total.discount_sale_view_form
+msgid "{'discount_type':discount_type,'discount_rate':discount_rate,'amount_discount':amount_discount}"
+msgstr "{'discount_type':discount_type,'discount_rate':discount_rate,'amount_discount':amount_discount}"
+
