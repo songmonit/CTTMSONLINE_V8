@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<template id="report_saleorder_document">
+    <t t-call="report.external_layout">
+        <div class="page">
+            <div class="oe_structure"/>
+            <h5 class="text-right"><strong>ID: <span t-field="o.name"/></strong></h5>
+            <h5 class="text-right">Ngày tạo: </h5>
+            <h5 class="text-right"><p t-field="o.date_order" class="text-right"/></h5>
+            <h2  class="text-center" t-if="o.state not in ['draft','sent']"><strong>ĐƠN HÀNG</strong></h2>
+            <h2  class="text-center" t-if="o.state in ['draft','sent']"><strong>BÁO GIÁ DỰ TOÁN</strong></h2>
+            <div class="row">
+                <div class="col-xs-12">
+                	<div>
+                    	<strong>Kính gửi: <span t-field="o.partner_id.name"/></strong>
+                        	<p style="margin:0 10px 0 68px">Địa chỉ: <span t-field="o.partner_id.street"/>, <span t-field="o.partner_id.city"/>, <span t-field="o.partner_id.state_id.name"/></p>
+                        	<p style="margin:0 10px 0 68px">Điện thoại: <span t-field="o.partner_id.phone"/><span style="margin:0 30px"/>Fax: <span t-field="o.partner_id.fax"/></p>
+                    </div>
+                </div>
+                <div class="col-xs-12" t-if="o.state not in ['draft','sent']">
+                	<br/>
+                    <p t-if="o.partner_shipping_id == o.partner_invoice_id">Địa chỉ nhận hóa đơn và giao hàng:</p>
+                    <p t-if="o.partner_shipping_id != o.partner_invoice_id">Địa chỉ hóa đơn: </p>
+                    <div t-field="o.partner_invoice_id">                     	
+                        <p style="margin:0 10px 0 68px"><span t-field="o.partner_invoice_id.name"/></p>
+                        <p style="margin:0 10px 0 68px">Địa chỉ: <span t-field="o.partner_invoice_id.street"/>, <span t-field="o.partner_invoice_id.city"/>, <span t-field="o.partner_invoice_id.state_id.name"/></p>
+                        <p style="margin:0 10px 0 68px">Điện thoại: <span t-field="o.partner_invoice_id.phone"/><span style="margin:0 30px"/>Fax:<span t-field="o.partner_invoice_id.fax"/></p>
+                        <p style="margin:0 10px 0 68px" t-if="o.partner_id.vat">VAT: <span t-field="o.partner_id.vat"/></p>
+                   	</div>
+
+                    <div t-if="o.partner_shipping_id != o.partner_invoice_id">
+                        <p>Địa chỉ giao hàng :</p>
+                        <div t-field="o.partner_shipping_id"> 
+                            <p style="margin:0 10px 0 68px"><span t-field="o.partner_shipping_id.name"/></p>
+                        	<p style="margin:0 10px 0 68px">Địa chỉ: <span t-field="o.partner_shipping_id.street"/>, <span t-field="o.partner_shipping_id.city"/>, <span t-field="o.partner_shipping_id.state_id.name"/></p>
+                        	<p style="margin:0 10px 0 68px">Điện thoại: <span t-field="o.partner_shipping_id.phone"/><span style="margin:0 30px"/>Fax:<span t-field="o.partner_shipping_id.fax"/></p>
+                        	<p style="margin:0 10px 0 68px" t-if="o.partner_id.vat">VAT: <span t-field="o.partner_id.vat"/></p>
+                   		</div>
+                   	</div>                        
+                </div>
+                
+            </div>
+
+			<div class="col-xs-12">
+            	<br/>
+            	<span t-if="o.state in ['draft','sent']">Theo yêu cầu của Quý khách, Công ty Cổ Phần Thành Thọ trân trọng báo giá như sau:</span> 
+            </div>
+            <table class="table table-bordered text-center">
+                <thead>
+                    <tr style="background-color:#F0F0F0">
+                        <th>Tên hàng / Mô tả</th>
+                        <th class="text-right">Số lượng</th>
+                        <th class="text-right">Đơn giá</th>
+                        <th>Thuế</th>
+                        <th groups="sale.group_discount_per_so_line">Chiết khấu(%)</th>
+                        <th class="text-right">Giá bán</th>
+                    </tr>
+               </thead>
+               <tbody class="sale_tbody">
+                    <tr t-foreach="o.order_line" t-as="l">
+                        <td>
+                           <span t-field="l.name"/>
+                        </td>
+                        <td class="text-right">
+                            <span t-field="l.product_uom_qty"/>
+                            <span groups="product.group_uom" t-field="l.product_uom"/>
+                        </td>
+                        <td class="text-right">
+                            <span t-field="l.price_unit"/>
+                        </td>
+                        <td>
+                            <span t-esc="', '.join(map(lambda x: x.name, l.tax_id))"/>
+                        </td>
+                        <td groups="sale.group_discount_per_so_line">
+                            <span t-field="l.discount"/>
+                        </td>
+                        <td class="text-right">
+                            <span t-field="l.price_subtotal"
+                                t-field-options='{"widget": "monetary", "display_currency": "o.pricelist_id.currency_id"}'/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="row">
+                <div class="col-xs-4 pull-right">
+                    <table class="table table-condensed">
+                        <tr class="border-black">
+                            <td><strong>Tổng trước thuế</strong></td>
+                            <td class="text-right">
+                                <span t-field="o.amount_untaxed"
+                                    t-field-options='{"widget": "monetary", "display_currency": "o.pricelist_id.currency_id"}'/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Thuế</td>
+                            <td class="text-right">
+                                <span t-field="o.amount_tax"
+                                    t-field-options='{"widget": "monetary", "display_currency": "o.pricelist_id.currency_id"}'/>
+                            </td>
+                        </tr>
+                        <tr class="border-black">
+                            <td><strong>Tổng thanh toán</strong></td>
+                            <td class="text-right">
+                                <span t-field="o.amount_total"
+                                    t-field-options='{"widget": "monetary", "display_currency": "o.pricelist_id.currency_id"}'/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <p t-field="o.note" />
+            <p t-if="o.payment_term">
+                <strong>Điều kiện thanh toán:</strong>
+                <span t-field="o.payment_term"/>
+            </p>
+			<div class="row">
+            	<div class="col-xs-4 text-center"><strong>KHÁCH HÀNG ĐỒNG Ý</strong></div>
+                <div class="col-xs-4"></div>
+                <div class="col-xs-4 text-center">
+                	<P>Cần Thơ, ngày . . . tháng . . .  năm</P>
+                	<strong>CÔNG TY CỔ PHẦN THÀNH THỌ</strong>
+                </div>
+            </div>
+        </div>
+    </t>
+</template>
+
+<template id="report_saleorder">
+    <t t-call="report.html_container">
+        <t t-foreach="doc_ids" t-as="doc_id">
+            <t t-raw="translate_doc(doc_id, doc_model, 'partner_id.lang', 'sale.report_saleorder_document')"/>
+        </t>
+    </t>
+</template>
+</data>
+</openerp>

@@ -133,7 +133,7 @@ class ReportController(Controller):
             se = _serialize_exception(e)
             error = {
                 'code': 200,
-                'message': "Odoo Server Error",
+                'message': "Server Error",
                 'data': se
             }
             return request.make_response(html_escape(simplejson.dumps(error)))
