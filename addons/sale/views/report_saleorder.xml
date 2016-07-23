@@ -51,10 +51,11 @@
                 </div>
             </div>
 
-            <table class="table table-condensed">
+            <table class="table table-bordered text-center">
                 <thead>
-                    <tr>
-                        <th>Description</th>
+                    <tr style="background-color:#F0F0F0">
+                        <th>STT</th>
+						<th>Description</th>
                         <th>Taxes</th>
                         <th class="text-right">Quantity</th>
                         <th class="text-right">Unit Price</th>

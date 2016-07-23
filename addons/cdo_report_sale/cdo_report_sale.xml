@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+    	<report 
+            id="cdo_report_sale"
+            string="In Báo Giá/Đơn hàng"
+            model="sale.order" 
+            report_type="qweb-pdf"
+            file="cdo_report_sale.cdo_report_sale_view" 
+            name="cdo_report_sale.cdo_report_sale_view" 
+        />
+    
+    </data>
+</openerp>
