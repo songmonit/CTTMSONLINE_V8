@@ -1,0 +1,36 @@
+<openerp>
+   <data>
+
+        <!-- make mautk's view -->
+
+       <record id="view_baomau_make_mautk" model="ir.ui.view">
+          <field name="name">baomau.make.mautk.form</field>
+          <field name="model">baomau.make.mautk</field>
+          <field name="arch" type="xml">
+            <form string="Giao thiết kế">
+                <group col="4">
+                    <field name="designer_id"/>
+                    <field name="baomau_id" required="1"/>
+                </group>
+                <footer>
+                    <button name="makeMauTK" string="Tạo" type="object" class="oe_highlight" />
+                    or
+                    <button string="Hủy bỏ" class="oe_link" special="cancel" />
+                </footer>
+            </form>
+          </field>
+       </record>
+
+       <!-- baomau make mautk's  action -->
+
+       <record id="action_baomau_make_mautk" model="ir.actions.act_window">
+          <field name="name">Giao Thiet Ke</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">baomau.make.mautk</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">form</field>
+          <field name="target">new</field>
+       </record>
+
+   </data>
+</openerp>

@@ -20,11 +20,12 @@ Mẫu in báo giá / Đơn hàng.
 Module cung cấp biểu mẩu báo giá và đơn hàng .""",
     'author': 'Do Huy Cuong',
     'website': 'huycuongdo@gmail.com',
-    'depends': ['base_setup','sale', 'report'],
+    'depends': ['base','sale', 'stock','report'],
     'data': [
 		'cdo_report_sale.xml',
         'cdo_report_sale_view.xml',
     ],
+	#'js':['js/docso.js'],
     'demo': [],
     'test': [],
     'installable': True,

@@ -14,7 +14,7 @@
 			                	<field name="mautk_image_ids" nolabel="1" widget="one2many_list">
 			                       	<tree string="Pictures" editable="bottom">
 			                       		<field name="file_name" invisible="1"/>
-			                       		<field name="image" widget="image" filename="file_name" width="70" class="cdo_img_400"/>
+			                       		<field name="image" widget="image" filename="file_name" class="cdo_img_400"/>
 			                       		<field name="name"/>
 			                       		<field name="description"/>
 			                       	</tree>

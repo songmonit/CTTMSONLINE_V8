@@ -23,7 +23,7 @@ class cdo_thietke_baomau(osv.osv):
               'content':fields.text(u'Nội dung yêu cầu về sản phẩm', track_visibility='onchange'),
               'description': fields.text(u'Mô tả chi tiết đa đạc và địa điểm lắp đặt', track_visibility='onchange'),
               'Note': fields.text(u'Ghi chú', track_visibility='onchange'),
-              'state':fields.selection([('new',u'Mới'),('price',u'Báo giá thiết kế'),('show',u'Báo mẫu'),('close',u'Đóng')],u'Trạng thái',readonly=True, track_visibility='onchange'),
+              'state':fields.selection([('new',u'Mới'),('show',u'Thiết kế'),('price',u'Báo giá'),('deploy',u'Triển khai'),('close',u'Đóng')],u'Trạng thái',readonly=True, track_visibility='onchange'),
               'create_date':fields.datetime('Ngày tạo', readonly=True),
               'path': fields.char(u'Thư mục lưu trữ', size=200, track_visibility='onchange'),
     }
@@ -34,6 +34,7 @@ class cdo_thietke_baomau(osv.osv):
     
     def baomau_close(self, cr, uid, ids, context=None):
         return self.write(cr, uid, ids, {'state': 'close'}, context=context)
+   
     '''
     def baomau_new(self, cr, uid, ids, context=None):
         return self.write(cr, uid, ids, {'state': 'new'}, context=context)

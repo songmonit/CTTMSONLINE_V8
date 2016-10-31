@@ -1,0 +1,36 @@
+<openerp>
+   <data>
+
+        <!-- crm make sale's view -->
+
+       <record id="view_design_make_sale" model="ir.ui.view">
+          <field name="name">design.make.sale.form</field>
+          <field name="model">design.make.sale</field>
+          <field name="arch" type="xml">
+            <form string="Convert to Quotation"  version="7.0">
+                <group col="4">
+                    <field name="partner_id" required="1"/>
+                    <field name="baomau_id"/>
+                </group>
+                <footer>
+                    <button name="makeOrder" string="Tạo" type="object" class="oe_highlight" />
+                    or
+                    <button string="Hủy bỏ" class="oe_link" special="cancel" />
+                </footer>
+            </form>
+          </field>
+       </record>
+
+       <!-- crm make sale's  action -->
+
+       <record id="action_design_make_sale" model="ir.actions.act_window">
+          <field name="name">Tạo báo giá</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">design.make.sale</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">form</field>
+          <field name="target">new</field>
+       </record>
+
+   </data>
+</openerp>

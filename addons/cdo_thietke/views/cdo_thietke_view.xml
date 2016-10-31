@@ -11,9 +11,9 @@
         <field name="arch" type="xml">
             <form string="yêu cầu báo mẫu">
             	<header>
-                    <button string="Giao thiết kế" name="action_cdo_thietke_mautk_form" type="action"  attrs="{'invisible': [('state','==','close')]}" class="oe_highlight" groups="cdo_thietke.group_thietke_dp"/>
+                    <!--<button string="Giao thiết kế" name="%(action_cdo_thietke_mautk_form)d" type="action"  attrs="{'invisible': [('state','==','close')]}" class="oe_highlight" groups="cdo_thietke.group_thietke_dp"/>-->
                     <button string="Đóng" name="baomau_close" type="object"   groups="cdo_thietke.group_thietke_dp"/>
-                    <field name="state" widget="statusbar" statusbar_visible="new,price,show,close"/>
+                    <field name="state" widget="statusbar" statusbar_visible="new,show,price,deploy,close"/>
                 </header>
                 <sheet>
                 	<group>
@@ -23,7 +23,7 @@
                 			<field name="path"/>
                 		</group>
                 		<group>
-                			<field name="designer_id"/>
+                			<field name="designer_id" readonly="True"/>
                 			<field name="date_deadline_baomau"/>
                 			<field name="date_deadline_baogia"/>
                 			<field name="date_deadline"/>
@@ -57,7 +57,7 @@
         <field name="model">cdo_thietke.baomau</field>
         <field name="type">tree</field>
         <field name="arch" type="xml">
-        	<tree string="Bao mau info" colors="blue:state=='new'; black:state=='price'; green:state=='show'">
+        	<tree string="Bao mau info" colors="blue:state=='new'; black:state=='price'; green:state=='show'" default_order="create_date desc">
             	<field name="create_date"/>
             	<field name="name"/>
             	<field name="partner_id"/>
@@ -66,7 +66,25 @@
             	<field name="state"/>
            	</tree>
         </field>
-    </record>  
+    </record>
+<!-- Mau Thiet ke Search View -->
+	    <record model="ir.ui.view" id="view_cdo_thietke_baomau_filter">
+	        <field name="name">YC Thiết Kế - Tìm kiếm</field>
+	        <field name="model">cdo_thietke.baomau</field>
+	        <field name="arch" type="xml">
+	        	 <search string="Tìm YC">
+	        	 	<field name="partner_id"/>
+	        	 	<field name="state"/>
+	        	 	<field name="user_id"/>
+                        	<filter string="Đang thực hiện" name="state_bm" domain="[('state','in',('new','price','show'))]"/>
+	        	 	<separator/>
+	        	 	<group expand="0" string="Nhóm theo...">
+                        <filter string="Khách hàng" domain="[]" context="{'group_by':'partner_id'}"/>
+                        <filter string="Trạng thái" domain="[]" context="{'group_by':'state'}"/>
+                    </group>
+	        	 </search>
+	        </field>
+	    </record>  
      
     </data>
 </openerp>

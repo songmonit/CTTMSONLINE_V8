@@ -18,6 +18,7 @@ class cdo_thietke_mautk(osv.osv):
     _columns={
               'baomau_id':fields.many2one('cdo_thietke.baomau',u'Yêu cầu báo mẫu',ondelete='set null', select=True, track_visibility='onchange', help="Báo mẫu yêu cầu nào?.",
                                           write=['cdo_thietke.group_thietke_dp'],read=['cdo_thietke.group_thietke']),
+              'partner_id':fields.many2one('res.partner', u'Khách hàng', help='Khách hàng.'),
               'designer_id':fields.many2one('res.users', u'Người thiết kế',track_visibility='onchange', help='Người phụ trách thiết kế.',
                                             write=['cdo_thietke.group_thietke_dp'],read=['cdo_thietke.group_thietke']),
               'chief_id':fields.many2one('res.users', u'Người giao', help='Người quản lý tiến độ mẫu thiết kế.',readonly=True),
@@ -61,12 +62,35 @@ class cdo_thietke_mautk(osv.osv):
         design = baomau_obj.read(cr, uid, active_id, ['name'], context=context)
         return design['name'] if design['name'] else False
     
+    def _get_default_baomau_content(self,cr, uid, context=None):
+        if context is None:
+            context = {}
+        baomau_obj = self.pool.get('cdo_thietke.baomau')
+        active_id = context and context.get('active_id', False) or False
+        if not active_id:
+            return False
+        design = baomau_obj.read(cr, uid, active_id, ['content'], context=context)
+        return design['content'] if design['content'] else False
+	
+    def _get_default_partner_id(self,cr, uid, context=None):
+        if context is None:
+            context = {}
+        baomau_obj = self.pool.get('cdo_thietke.baomau')
+        active_id = context and context.get('active_id', False) or False
+        if not active_id:
+            return False
+        cus = baomau_obj.read(cr, uid, [active_id], ['partner_id'], context=context)[0]
+        return cus['partner_id'][0] if cus['partner_id'] else False
+		
     _defaults={
                'state': lambda *a: 'open',
                'baomau_id': _get_default_baomau_id,
+			   'partner_id':_get_default_partner_id,
                'chief_id':lambda s, cr, uid, c: uid,
                'name': _get_default_baomau_name,
                'date':fields.datetime.now,
+			   'description':_get_default_baomau_content,
+               'progress':0,
                }
     
     def _check_dates(self, cr, uid, ids, context=None):
@@ -88,7 +112,9 @@ class cdo_thietke_mautk(osv.osv):
         if workingtime_h<1:
             raise osv.except_osv(u'Thay đổi thời hạn không được lưu!', u'CTTMS chỉ chấp nhận thay đổi từ 1h trở lên so với hiện tại.')
             return False
-        else: return True
+        else:
+            self.upd_working_time(cr,uid,context=context)
+            return True
         
     def working_time_change(self,cr,uid,ids,context=None):
         now =  datetime.now()
@@ -103,10 +129,12 @@ class cdo_thietke_mautk(osv.osv):
         ids=mautk_obj.search(cr, uid, [('progress','!=',100)])
         now =  datetime.now()
         for leave in self.read(cr, uid, ids, ['id','progress','date_deadline','state'], context=context):
-            if (leave['date_deadline'] != 'open'):
-                deadline=leave['date_deadline']
-                workingtime=datetime.strptime(deadline,'%Y-%m-%d %H:%M:%S')-now
-                self.write(cr, uid, leave['id'], {'working_time': workingtime.days}, context=context)
+            if (leave['state'] == 'open'):
+                if leave['date_deadline']:
+                    deadline=leave['date_deadline']
+                    workingtime=datetime.strptime(deadline,'%Y-%m-%d %H:%M:%S')-now
+                    #print "%s\n" % workingtime.days
+                    self.write(cr, uid, leave['id'], {'working_time': workingtime.days}, context=context)
         print "Working time updated"
         return True
     def notice_by_email(self, cr, uid, ids, context=None):

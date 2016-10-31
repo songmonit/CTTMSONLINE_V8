@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="crm_case_form_view_oppor">
+            <field name="name">Design - Quote Inherit</field>
+            <field name="model">cdo_thietke.baomau</field>
+            <field name="inherit_id" ref="cdo_thietke.view_cdo_thietke_baomau_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='state']" position="before">
+                        <button string="Báo giá" name="%(action_design_make_sale)d" type="action" class="oe_highlight" groups="cdo_thietke.group_thietke_dp"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+        <!-- add needaction_menu_ref to reload quotation needaction when opportunity needaction is reloaded -->
+        <!--
+        <record model="ir.actions.act_window" id="crm.crm_case_category_act_oppor11">
+            <field name="context">{'stage_type': 'opportunity', 'default_type': 'opportunity', 'default_user_id': uid, 'needaction_menu_ref': 'sale.menu_sale_quotations'}</field>
+        </record>
+        -->
+
+       <record model="ir.ui.view" id="sale_view_inherit1234">
+            <field name="name">sale.order.inherit</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <field name="user_id" position="after">
+                    <field name="categ_ids" widget="many2many_tags"/>
+                </field>
+                <!--  <field name="origin" position="after"><field name="baomau_id" widget="many2one_tags"/>
+                    <field name="campaign_id" />
+                    <field name="medium_id" />
+                    <field name="source_id" />
+                </field> -->
+
+            </field>
+        </record>
+    </data>
+</openerp>

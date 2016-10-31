@@ -8,4 +8,6 @@
 #
 ##############################################################################
 # Mẫu in Báo giá / Đơn hàng
+#import models
+#import report
 import cdo_report_sale

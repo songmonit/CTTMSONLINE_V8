@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>	
+		<record model="ir.ui.view" id="cdo_thietke_make_mautk_form_view_oppor">
+            <field name="name">Baomau - MauTK Inherit</field>
+            <field name="model">cdo_thietke.baomau</field>
+            <field name="inherit_id" ref="cdo_thietke.view_cdo_thietke_baomau_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='state']" position="before">
+                        <button string="Giao thiết kế" name="%(action_baomau_make_mautk)d" type="action" class="oe_highlight" attrs="{'invisible': [('state','==','close')]}"  groups="cdo_thietke.group_thietke_dp"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+</openerp>
